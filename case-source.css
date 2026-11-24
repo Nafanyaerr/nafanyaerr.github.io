@@ -1,0 +1,55 @@
+/* Source-led case studies share the portfolio's quiet typography and unframed images. */
+.case-source .case-intro{margin-bottom:64px}
+.case-source .case-intro+.case-section{margin-top:64px}
+.case-source .source-block{min-width:0;margin-top:48px}
+.case-source .case-section>.source-block:first-of-type{margin-top:0}
+.case-source .source-block:first-child{margin-top:0}
+.case-source .source-prose{max-width:840px;font-size:18px;line-height:32px}
+.case-source .source-prose p{margin:0 0 24px}
+.case-source .source-prose p:last-child{margin-bottom:0}
+.case-source .source-prose>div+div{margin-top:24px}
+.case-source .source-prose+.source-prose{margin-top:24px}
+.case-source .source-prose ul,.case-source .source-prose ol{padding-left:24px;margin:20px 0 24px}
+.case-source .source-prose li+li{margin-top:8px}
+.case-source .source-subheading{font:500 24px/32px var(--body-font);margin:48px 0 20px}
+.case-source .source-subheading:first-child{margin-top:0}
+.case-source .source-heading{margin-top:112px;margin-bottom:32px;max-width:960px}
+.case-source .source-heading h2{font:500 40px/48px var(--display-font);letter-spacing:-.8px;margin:0}
+.case-source .source-heading+.source-block{margin-top:0}
+.case-source .source-figure{min-width:0;margin:0}
+.case-source .source-prose+.source-figure,.case-source .source-prose+.source-image-grid,
+.case-source .source-figure+.source-prose,.case-source .source-image-grid+.source-prose{margin-top:40px}
+.case-source .source-figure+.source-figure{margin-top:32px}
+.case-source .source-image-grid{display:grid;grid-template-columns:repeat(var(--source-columns,2),minmax(0,1fr));gap:24px;align-items:start;min-width:0}
+.case-source .source-image-grid>.source-figure{margin:0}
+.case-source .source-image-grid+.source-figure,.case-source .source-image-grid+.source-image-grid,.case-source .source-figure+.source-image-grid{margin-top:24px}
+.case-source .source-image-viewport{display:block;position:relative;overflow:hidden;border:0;border-radius:0;background:transparent}
+.case-source .source-image-viewport img{display:block;width:100%;height:auto;max-width:none}
+.case-source .source-caption{font-size:14px;line-height:24px;margin-top:16px;color:var(--case-muted)}
+.case-source .source-caption:first-child{margin:0 0 8px}
+.case-source .source-note{font-size:16px;line-height:28px;color:var(--case-muted);max-width:840px;margin:24px 0}
+.case-source .source-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:40px 0 0}
+.case-source .source-metrics>div{min-width:0}
+.case-source .source-metrics dt{font:500 48px/56px var(--display-font);margin:0 0 16px}
+.case-source .source-metrics dd{font-size:18px;line-height:28px;margin:0}
+.case-source .case-section-heading:empty{display:none}
+.case-source .case-image-link{min-width:0}
+@media(max-width:760px){
+ .case-source .source-heading{margin-top:80px}
+ .case-source .source-heading h2{font-size:36px;line-height:44px}
+ .case-source .source-image-grid{grid-template-columns:1fr!important;gap:24px}
+ .case-source .source-image-grid>*{grid-column:auto!important;grid-row:auto!important}
+ .case-source .source-metrics{grid-template-columns:1fr;gap:32px}
+}
+@media(max-width:520px){
+ .case-source .case-intro{margin-bottom:48px}
+ .case-source .source-block{margin-top:32px}
+ .case-source .source-prose{font-size:16px;line-height:28px}
+ .case-source .source-heading{margin-top:64px;margin-bottom:28px}
+ .case-source .source-heading h2{font-size:30px;line-height:40px;letter-spacing:-.4px}
+ .case-source .source-subheading{font-size:22px;line-height:32px;margin-top:32px}
+ .case-source .source-image-grid{gap:16px}
+ .case-source .source-image-grid+.source-figure,.case-source .source-image-grid+.source-image-grid,.case-source .source-figure+.source-image-grid{margin-top:16px}
+ .case-source .source-prose+.source-figure,.case-source .source-prose+.source-image-grid,
+ .case-source .source-figure+.source-prose,.case-source .source-image-grid+.source-prose{margin-top:32px}
+}

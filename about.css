@@ -1,0 +1,195 @@
+body.about-page {
+  --about-width: min(1408px, round(down, 80vw, 16px));
+  --about-gap: 32px;
+  background: var(--page, #faf9f5);
+}
+
+body.about-page :is(main.shell, .site-header, .site-footer) {
+  width: var(--about-width);
+  max-width: none;
+  margin-inline: auto;
+}
+
+body.about-page .site-header { min-height: 72px; padding: 16px 0; }
+.about-page main {
+  container-type: inline-size;
+  padding-block: 120px 0;
+}
+
+.about-composition {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--about-gap);
+}
+
+.about-page .about-story p,
+.about-page p.about-story {
+  margin: 0;
+  font-size: var(--type-16);
+  line-height: 1.2;
+}
+
+.about-collage {
+  position: relative;
+  isolation: isolate;
+}
+
+.about-collage--making {
+  --ornament-overhang: 64px;
+  width: calc(75% + .75 * var(--about-gap));
+  aspect-ratio: 444 / 516;
+  margin-top: 72px;
+}
+
+.about-collage--portrait {
+  width: calc(75% - .25 * var(--about-gap));
+  aspect-ratio: 412.592 / 376;
+  margin-inline-start: auto;
+}
+
+.about-collage > * {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--w);
+  height: var(--h);
+}
+
+.about-ornament {
+  font-size: var(--goat-stitch);
+  pointer-events: none;
+}
+
+.about-ornament--cyan {
+  --ornament-width: calc(var(--stitch-columns) * 1em);
+  --ornament-height: calc(var(--stitch-rows) * 1em);
+  left: clamp(0px, var(--x), calc(100% + var(--ornament-overhang) - var(--ornament-width)));
+  width: var(--ornament-width);
+  height: var(--ornament-height);
+}
+
+.about-ornament--above-fossil {
+  top: calc(var(--y) - var(--ornament-height));
+}
+
+.about-ornament--green {
+  top: auto;
+  bottom: 0;
+  width: 11em;
+  height: 30em;
+}
+
+.about-ornament img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.about-interests {
+  display: grid;
+  gap: 16px;
+  margin-top: 120px;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: var(--about-gap);
+  margin-top: 120px;
+}
+
+.about-photo { min-width: 0; margin: 0; }
+.about-gallery > .about-photo { aspect-ratio: 116 / 166; }
+
+.about-photo a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-photo a:focus-visible {
+  outline: 2px solid var(--ink, #25272a);
+  outline-offset: 4px;
+}
+
+.about-photo img {
+  position: absolute;
+  display: block;
+  top: var(--crop-top, 0);
+  left: var(--crop-left, 0);
+  width: var(--crop-width, 100%);
+  height: var(--crop-height, 100%);
+  max-width: none;
+  object-fit: cover;
+  object-position: var(--crop-position, center);
+  border: 0;
+  border-radius: 0;
+}
+
+.about-photo--fossil {
+  --crop-top: -18.91%;
+  --crop-height: 190.07%;
+}
+
+.about-photo--crochet {
+  --crop-top: -28.84%;
+  --crop-left: -31.08%;
+  --crop-width: 142.12%;
+  --crop-height: 132.50%;
+}
+
+.about-photo--bird {
+  --crop-top: -14.15%;
+  --crop-left: -117.59%;
+  --crop-width: 247.97%;
+  --crop-height: 130.47%;
+}
+
+.about-photo--bonnet {
+  --crop-top: -8.98%;
+  --crop-left: -56.23%;
+  --crop-width: 218.44%;
+  --crop-height: 115.18%;
+}
+
+.about-photo--frog {
+  --crop-left: -35.79%;
+  --crop-width: 229.12%;
+  --crop-height: 106.70%;
+}
+
+.about-photo--mountains { --crop-position: center bottom; }
+.about-photo--fog { --crop-position: center top; }
+.about-photo--teapots { --crop-position: left center; }
+
+.about-page .site-footer { margin-top: 120px; margin-bottom: 16px; gap: 32px; }
+
+@media (max-width: 1000px) {
+  body.about-page { --about-width: round(down, calc(100% - 64px), 16px); --about-gap: 24px; }
+  .about-page main { padding-top: 64px; }
+  .about-page .site-footer { margin-top: 100px; }
+  .about-page .about-story p,
+  .about-page p.about-story { line-height: 1.5; }
+  .about-collage--making {
+    --ornament-overhang: 0px;
+    width: min(100%, 444px);
+    margin-top: 48px;
+  }
+  .about-collage--portrait { width: min(100%, 412px); }
+  .about-interests { margin-top: 64px; }
+  .about-gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 80px; }
+}
+
+@media (max-width: 700px) {
+  body.about-page { --about-width: round(down, calc(100% - 40px), 16px); }
+  body.about-page .site-header { min-height: 64px; }
+  .about-page main { padding-top: 40px; }
+  .about-composition { grid-template-columns: 1fr; gap: 48px; }
+  .about-collage { margin-inline: auto; }
+  .about-collage--making { margin-top: 32px; }
+  .about-interests { margin-top: 32px; }
+  .about-gallery { gap: 16px; margin-top: 48px; }
+  .about-page .site-footer { margin-top: 80px; gap: 24px; }
+}

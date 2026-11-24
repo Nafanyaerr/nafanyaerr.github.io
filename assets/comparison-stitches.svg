@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="stitch" d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(-4.33398 0)"/>
+  </defs>
+  <symbol id="slide" viewBox="0 0 32 16">
+    <use href="#stitch" x="7.33246" y="1.49934" fill="var(--comparison-ink, #E8B92E)"/>
+    <use href="#stitch" x="2.99869" y="5.83312" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="7.33246" y="5.83312" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="7.33246" y="10.16689" fill="var(--comparison-ink, #D94658)"/>
+    <use href="#stitch" x="20.33377" y="1.49934" fill="var(--comparison-ink, #E8B92E)"/>
+    <use href="#stitch" x="24.66754" y="5.83312" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="20.33377" y="5.83312" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="20.33377" y="10.16689" fill="var(--comparison-ink, #D94658)"/>
+  </symbol>
+  <symbol id="expand" viewBox="0 0 24 24">
+    <use href="#stitch" x="9.83311" y="1.16557" fill="var(--comparison-ink, #E8B92E)"/>
+    <use href="#stitch" x="14.16688" y="1.16557" fill="var(--comparison-ink, #E8B92E)"/>
+    <use href="#stitch" x="18.50066" y="1.16557" fill="var(--comparison-ink, #E8B92E)"/>
+    <use href="#stitch" x="14.16688" y="5.49934" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="18.50066" y="5.49934" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="9.83311" y="9.83311" fill="var(--comparison-ink, #D94658)"/>
+    <use href="#stitch" x="18.50066" y="9.83311" fill="var(--comparison-ink, #D94658)"/>
+    <use href="#stitch" x="1.16557" y="9.83311" fill="var(--comparison-ink, #D94658)"/>
+    <use href="#stitch" x="1.16557" y="14.16688" fill="var(--comparison-ink, #6A3B94)"/>
+    <use href="#stitch" x="5.49934" y="14.16688" fill="var(--comparison-ink, #6A3B94)"/>
+    <use href="#stitch" x="1.16557" y="18.50066" fill="var(--comparison-ink, #48AFC0)"/>
+    <use href="#stitch" x="5.49934" y="18.50066" fill="var(--comparison-ink, #48AFC0)"/>
+    <use href="#stitch" x="9.83311" y="18.50066" fill="var(--comparison-ink, #48AFC0)"/>
+  </symbol>
+  <symbol id="close" viewBox="0 0 24 24">
+    <use href="#stitch" x="1.16557" y="1.16557" fill="var(--comparison-ink, #E8B92E)"/>
+    <use href="#stitch" x="18.50066" y="1.16557" fill="var(--comparison-ink, #E8B92E)"/>
+    <use href="#stitch" x="5.49934" y="5.49934" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="14.16688" y="5.49934" fill="var(--comparison-ink, #EB6B2F)"/>
+    <use href="#stitch" x="9.83311" y="9.83311" fill="var(--comparison-ink, #D94658)"/>
+    <use href="#stitch" x="5.49934" y="14.16688" fill="var(--comparison-ink, #6A3B94)"/>
+    <use href="#stitch" x="14.16688" y="14.16688" fill="var(--comparison-ink, #6A3B94)"/>
+    <use href="#stitch" x="1.16557" y="18.50066" fill="var(--comparison-ink, #48AFC0)"/>
+    <use href="#stitch" x="18.50066" y="18.50066" fill="var(--comparison-ink, #48AFC0)"/>
+  </symbol>
+</svg>

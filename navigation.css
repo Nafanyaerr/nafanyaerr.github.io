@@ -1,0 +1,67 @@
+/* States from Figma 389:2283; exact exported bracket assets. */
+:is(.site-header,.case-review-header) {
+  position:sticky;
+  top:0;
+  z-index:40;
+  background:var(--page,#faf9f5);
+}
+.site-header {
+  /* Extend the background to the viewport edges while keeping the menu on its grid. */
+  border-image:linear-gradient(var(--page,#faf9f5) 0 0) fill 0 / 0 / 0 100vmax;
+}
+html:has(.site-header) {
+  scroll-padding-top:calc(var(--site-header-height,80px) + 12px);
+}
+.skip:focus {z-index:52}
+.site-header nav{display:flex;align-items:flex-start;gap:0}
+.site-header nav a{position:relative;display:flex;align-items:center;justify-content:center;flex:none;height:36px;padding:7px 16px 9px;color:var(--ink,#25272a);font-size:16px;font-weight:400;line-height:20px;text-align:center;white-space:nowrap;text-decoration:none}
+.site-header nav a[data-menu="work"]{width:74px}
+.site-header nav a[data-menu="history"]{width:90px}
+.site-header nav a[data-menu="about"]{width:80px}
+.site-header nav a[data-menu="contact"]{width:94px}
+.site-header nav a:last-child{margin-left:0;padding-right:16px}
+.site-header nav a[aria-current="page"]{color:#25272a;font-weight:600}
+.site-header nav a:hover{background-image:none;text-decoration:none}
+.site-header nav a:focus-visible{outline-offset:4px}
+.nav-label{position:relative;display:inline-block}
+.nav-decoration{position:absolute;inset:0;visibility:hidden;pointer-events:none}
+:is(.site-header nav,.case-review-header) a:is(:hover,:focus-visible,:active) .nav-decoration{visibility:visible}
+.nav-decoration .menu-bracket{position:absolute;display:block;max-width:none;top:0}
+.nav-decoration .menu-bracket-left{right:calc(100% + 8px)}
+.nav-decoration .menu-bracket-right{left:calc(100% + 8px);top:.2px}
+@media(max-width:700px){
+ .site-header nav{width:auto;max-width:100%;gap:0}
+ .site-header nav a{padding-inline:8px;font-size:16px}
+ .site-header nav a:last-child{padding-right:8px}
+ .site-header nav a[data-menu="work"]{width:58px}
+ .site-header nav a[data-menu="history"]{width:74px}
+ .site-header nav a[data-menu="about"]{width:64px}
+ .site-header nav a[data-menu="contact"]{width:78px}
+}
+
+/* Common page edges for the project index, case studies and footer. */
+:root{--review-max:1400px;--review-gutter:clamp(20px,4.2vw,80px)}
+body .shell,body .case-editorial.shell {
+  width:min(var(--review-max),calc(100% - 2 * var(--review-gutter)));
+  max-width:none;margin-inline:auto;
+}
+body:not(.case-page) .site-header {
+  width:min(var(--review-max),calc(100% - 2 * var(--review-gutter)));
+  max-width:none;margin-inline:auto;height:80px;padding:0;
+  align-items:center;justify-content:center;
+}
+body:not(.case-page) .site-header nav{width:auto;justify-content:center}
+.hero .hero-content {
+  width:100%;max-width:none;margin:0;
+  grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);
+  gap:clamp(32px,4vw,64px);align-items:center;
+}
+main .hero{min-height:0;padding-block:clamp(48px,5vw,80px) clamp(64px,6vw,96px)}
+.hero .hero-content h1{max-width:40ch;margin:0;text-wrap:pretty}
+.hero .hero-content .hero-art{width:min(100%,420.75px);justify-self:center}
+@media(max-width:700px) {
+  body:not(.case-page) .site-header{height:68px}
+  main .hero{padding-block:40px 52px}
+  .hero .hero-content{align-items:flex-start;gap:24px}
+  .hero .hero-content .hero-art{align-self:center}
+}

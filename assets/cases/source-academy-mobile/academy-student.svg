@@ -1,0 +1,163 @@
+<svg width="1440" height="1222" viewBox="0 0 1440 1222" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Student workflow &#226;&#128;&#148; portfolio">
+<g id="01  Find your learning path" clip-path="url(#clip0_411_2714)">
+<text id="01 Find your learning path" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="48" y="55.38">01  Find your learning path</tspan></text>
+</g>
+<g id="02  Learn and progress" clip-path="url(#clip1_411_2714)">
+<text id="02 Learn and progress" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="48" y="271.38">02  Learn and progress</tspan></text>
+</g>
+<g id="student.login / Log in">
+<rect x="48.5" y="98.7891" width="239" height="87" rx="43.5" fill="white"/>
+<rect x="48.5" y="98.7891" width="239" height="87" rx="43.5" stroke="#CDD1CB"/>
+<text id="Log in" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="141.94" y="136.835">Log in</tspan></text>
+<text id="Student" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="141.866" y="161.88">Student</tspan></text>
+</g>
+<g id="student.education / Education">
+<rect x="376.5" y="98.7891" width="239" height="87" rx="7.5" fill="white"/>
+<rect x="376.5" y="98.7891" width="239" height="87" rx="7.5" stroke="#CDD1CB"/>
+<text id="Education" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="452.969" y="136.835">Education</tspan></text>
+<text id="Open learning catalog" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="423.45" y="161.88">Open learning catalog</tspan></text>
+</g>
+<g id="student.find / Find or resume course">
+<rect x="704.5" y="98.7891" width="279" height="87" rx="7.5" fill="white"/>
+<rect x="704.5" y="98.7891" width="279" height="87" rx="7.5" stroke="#CDD1CB"/>
+<text id="Find or resume course" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="748.032" y="136.835">Find or resume course</tspan></text>
+<text id="Search / filters / In progress" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="752.446" y="161.88">Search / filters / In progress</tspan></text>
+</g>
+<g id="student.module / Open available module">
+<rect x="1064.5" y="98.7891" width="327" height="87" rx="7.5" fill="white"/>
+<rect x="1064.5" y="98.7891" width="327" height="87" rx="7.5" stroke="#CDD1CB"/>
+<text id="Open available module" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1130.42" y="136.835">Open available module</tspan></text>
+<text id="Review lessons &#38; progress" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="1139.85" y="161.88">Review lessons &#38; progress</tspan></text>
+</g>
+<path id="student.login &#226;&#134;&#146; student.education" d="M288 142.289H376M369 138.289L376 142.289L369 146.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="student.education &#226;&#134;&#146; student.find" d="M616 142.289H704M697 138.289L704 142.289L697 146.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="student.find &#226;&#134;&#146; student.module" d="M984 142.289H1064M1057 138.289L1064 142.289L1057 146.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="student.study / Study lesson">
+<rect x="48.5" y="366.789" width="247" height="103" rx="7.5" fill="white"/>
+<rect x="48.5" y="366.789" width="247" height="103" rx="7.5" stroke="#CDD1CB"/>
+<text id="Study lesson" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="116.418" y="412.835">Study lesson</tspan></text>
+<text id="Video / content / iSpring" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="91.7324" y="437.88">Video / content / iSpring</tspan></text>
+</g>
+<g id="student.test / Take lesson test">
+<rect x="376.5" y="366.789" width="247" height="103" rx="7.5" fill="white"/>
+<rect x="376.5" y="366.789" width="247" height="103" rx="7.5" stroke="#CDD1CB"/>
+<text id="Take lesson test" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="430.101" y="412.835">Take lesson test</tspan></text>
+<text id="If required for this lesson" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="417.736" y="437.88">If required for this lesson</tspan></text>
+</g>
+<g id="student.requirements / Requirements&#10;complete?" clip-path="url(#clip2_411_2714)">
+<path id="Decision outline" d="M816 338.289L928 418.289L816 498.289L704 418.289L816 338.289Z" fill="white" stroke="#929A96" stroke-width="1.5"/>
+<text id="Requirements complete?" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="756.56" y="424.835">Requirements&#10;</tspan><tspan x="771.132" y="449.835">complete?</tspan></text>
+</g>
+<g id="student.more / More lessons&#10;or modules?" clip-path="url(#clip3_411_2714)">
+<path id="Decision outline_2" d="M1200 338.289L1312 418.289L1200 498.289L1088 418.289L1200 338.289Z" fill="white" stroke="#929A96" stroke-width="1.5"/>
+<text id="More lessons or modules?" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1142.76" y="424.835">More lessons&#10;</tspan><tspan x="1147.3" y="449.835">or modules?</tspan></text>
+</g>
+<path id="student.module &#226;&#134;&#146; student.study" d="M1392 142.289H1416V302.289H168V366.289M172 359.289L168 366.289L164 359.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="student.study &#226;&#134;&#146; student.test" d="M296 418.289H376M369 414.289L376 418.289L369 422.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="student.test &#226;&#134;&#146; student.requirements" d="M624 418.289H704M697 414.289L704 418.289L697 422.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="student.requirements &#226;&#134;&#146; student.more &#194;&#183; Yes" d="M928 418.289H1088M1081 414.289L1088 418.289L1081 422.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Yes" clip-path="url(#clip4_411_2714)">
+<text id="Yes_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="984" y="401.38">Yes</tspan></text>
+</g>
+<g id="student.review / Review lesson">
+<rect x="704.5" y="606.789" width="223" height="87" rx="7.5" fill="white"/>
+<rect x="704.5" y="606.789" width="223" height="87" rx="7.5" stroke="#CDD1CB"/>
+<text id="Review lesson" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="754.723" y="644.835">Review lesson</tspan></text>
+<text id="Finish required activities" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="735.726" y="669.88">Finish required activities</tspan></text>
+</g>
+<g id="student.next / Next lesson / module">
+<rect x="1088.5" y="606.789" width="223" height="87" rx="7.5" fill="white"/>
+<rect x="1088.5" y="606.789" width="223" height="87" rx="7.5" stroke="#CDD1CB"/>
+<text id="Next lesson / module" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1109.49" y="644.835">Next lesson / module</tspan></text>
+<text id="Continue learning" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="1141.83" y="669.88">Continue learning</tspan></text>
+</g>
+<path id="student.requirements &#226;&#134;&#146; student.review &#194;&#183; No" d="M816 498.289V606.289M820 599.289L816 606.289L812 599.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="No" clip-path="url(#clip5_411_2714)">
+<text id="No_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="834" y="557.38">No</tspan></text>
+</g>
+<path id="student.review &#226;&#134;&#146; student.study" d="M704 650.289H168V470.289M164 477.289L168 470.289L172 477.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="student.more &#226;&#134;&#146; student.next &#194;&#183; Yes" d="M1200 498.289V606.289M1204 599.289L1200 606.289L1196 599.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Yes_3" clip-path="url(#clip6_411_2714)">
+<text id="Yes_4" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="1218" y="557.38">Yes</tspan></text>
+</g>
+<path id="student.next &#226;&#134;&#146; student.study" d="M1200 694.289V742.289H72V470.289M68 477.289L72 470.289L76 477.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="student.complete / Course complete">
+<rect x="1088.5" y="814.789" width="263" height="103" rx="51.5" fill="white"/>
+<rect x="1088.5" y="814.789" width="263" height="103" rx="51.5" stroke="#CDD1CB"/>
+<text id="Course complete" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1146.52" y="860.835">Course complete</tspan></text>
+<text id="View in Completed" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="1157.88" y="885.88">View in Completed</tspan></text>
+</g>
+<path id="student.more &#226;&#134;&#146; student.complete &#194;&#183; No" d="M1312 418.289H1376V866.289H1352M1359 870.289L1352 866.289L1359 862.289" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="No_3" clip-path="url(#clip7_411_2714)">
+<text id="No_4" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="1332" y="397.38">No</tspan></text>
+</g>
+<g id="student.feedback / Comments &#38; feedback">
+<rect x="48.5" y="814.789" width="583" height="103" rx="7.5" fill="white"/>
+<rect x="48.5" y="814.789" width="583" height="103" rx="7.5" stroke="#CDD1CB" stroke-dasharray="5 5"/>
+<text id="Comments &#38; feedback" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="242.468" y="860.835">Comments &#38; feedback</tspan></text>
+<text id="Optional: comment or report a material issue" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="192.904" y="885.88">Optional: comment or report a material issue</tspan></text>
+</g>
+<path id="student.study &#226;&#134;&#146; student.feedback &#194;&#183; Optional" d="M48 418.289H24V866.289H48" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<g id="Separate examination path heading" clip-path="url(#clip8_411_2714)">
+<text id="Separate examination path" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Tektur" font-size="22" font-weight="500" letter-spacing="0em"><tspan x="48" y="1021.49">Separate examination path</tspan></text>
+<text id="Choose Examination as the product type in the catalog." fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="48" y="1053.24">Choose Examination as the product type in the catalog.</tspan></text>
+</g>
+<g id="exam.choose / Choose Examination">
+<rect x="48.5" y="1078.79" width="311" height="103" rx="7.5" fill="white"/>
+<rect x="48.5" y="1078.79" width="311" height="103" rx="7.5" stroke="#CDD1CB"/>
+<text id="Choose Examination" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="116.048" y="1124.83">Choose Examination</tspan></text>
+<text id="Product type filter" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="144.281" y="1149.88">Product type filter</tspan></text>
+</g>
+<g id="exam.groups / Open question groups">
+<rect x="392.5" y="1078.79" width="311" height="103" rx="7.5" fill="white"/>
+<rect x="392.5" y="1078.79" width="311" height="103" rx="7.5" stroke="#CDD1CB"/>
+<text id="Open question groups" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="452.709" y="1124.83">Open question groups</tspan></text>
+<text id="Review exam modules" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="474.5" y="1149.88">Review exam modules</tspan></text>
+</g>
+<g id="exam.start / Start / continue exam">
+<rect x="736.5" y="1078.79" width="311" height="103" rx="7.5" fill="white"/>
+<rect x="736.5" y="1078.79" width="311" height="103" rx="7.5" stroke="#CDD1CB"/>
+<text id="Start / continue exam" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="799.486" y="1124.83">Start / continue exam</tspan></text>
+<text id="Resume available attempt" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="806.831" y="1149.88">Resume available attempt</tspan></text>
+</g>
+<g id="exam.answer / Answer exam questions">
+<rect x="1080.5" y="1078.79" width="311" height="103" rx="7.5" fill="white"/>
+<rect x="1080.5" y="1078.79" width="311" height="103" rx="7.5" stroke="#CDD1CB"/>
+<text id="Answer exam questions" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1133.29" y="1124.83">Answer exam questions</tspan></text>
+<text id="Timed question groups" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="1159.94" y="1149.88">Timed question groups</tspan></text>
+</g>
+<path id="exam.choose &#226;&#134;&#146; exam.groups" d="M360 1130.29H392M385 1126.29L392 1130.29L385 1134.29" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="exam.groups &#226;&#134;&#146; exam.start" d="M704 1130.29H736M729 1126.29L736 1130.29L729 1134.29" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="exam.start &#226;&#134;&#146; exam.answer" d="M1048 1130.29H1080M1073 1126.29L1080 1130.29L1073 1134.29" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_411_2714">
+<rect width="500" height="20" fill="white" transform="translate(48 40.2891)"/>
+</clipPath>
+<clipPath id="clip1_411_2714">
+<rect width="500" height="20" fill="white" transform="translate(48 256.289)"/>
+</clipPath>
+<clipPath id="clip2_411_2714">
+<rect width="224" height="160" fill="white" transform="translate(704 338.289)"/>
+</clipPath>
+<clipPath id="clip3_411_2714">
+<rect width="224" height="160" fill="white" transform="translate(1088 338.289)"/>
+</clipPath>
+<clipPath id="clip4_411_2714">
+<rect width="68" height="20" fill="white" transform="translate(984 386.289)"/>
+</clipPath>
+<clipPath id="clip5_411_2714">
+<rect width="68" height="20" fill="white" transform="translate(834 542.289)"/>
+</clipPath>
+<clipPath id="clip6_411_2714">
+<rect width="68" height="20" fill="white" transform="translate(1218 542.289)"/>
+</clipPath>
+<clipPath id="clip7_411_2714">
+<rect width="50" height="20" fill="white" transform="translate(1332 382.289)"/>
+</clipPath>
+<clipPath id="clip8_411_2714">
+<rect width="1344" height="60" fill="white" transform="translate(48 998.289)"/>
+</clipPath>
+</defs>
+</svg>

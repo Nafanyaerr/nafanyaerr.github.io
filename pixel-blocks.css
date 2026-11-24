@@ -1,0 +1,17 @@
+/* Each stage reveals more full squares at the same scale as the site's stitches. */
+@media (prefers-reduced-motion: no-preference) {
+  .pixel-revealing {
+    mask-size: calc(5 * var(--goat-stitch, 8px)) calc(5 * var(--goat-stitch, 8px));
+    mask-repeat: repeat;
+    animation: pixel-block-reveal 260ms steps(1, end) var(--pixel-reveal-delay, 0ms) backwards;
+  }
+
+  @keyframes pixel-block-reveal {
+    0% { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 5'%3E%3Cpath d='M0 0h1v1h-1zM3 2h1v1h-1zM1 4h1v1h-1zM2 1h1v1h-1z'/%3E%3C/svg%3E"); }
+    17% { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 5'%3E%3Cpath d='M0 0h1v1h-1zM3 2h1v1h-1zM1 4h1v1h-1zM2 1h1v1h-1zM0 3h1v1h-1zM2 0h1v1h-1zM4 4h1v1h-1zM0 2h1v1h-1z'/%3E%3C/svg%3E"); }
+    34% { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 5'%3E%3Cpath d='M0 0h1v1h-1zM3 2h1v1h-1zM1 4h1v1h-1zM2 1h1v1h-1zM0 3h1v1h-1zM2 0h1v1h-1zM4 4h1v1h-1zM0 2h1v1h-1zM3 3h1v1h-1zM4 0h1v1h-1zM1 2h1v1h-1zM2 4h1v1h-1zM0 1h1v1h-1z'/%3E%3C/svg%3E"); }
+    51% { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 5'%3E%3Cpath d='M0 0h1v1h-1zM3 2h1v1h-1zM1 4h1v1h-1zM2 1h1v1h-1zM0 3h1v1h-1zM2 0h1v1h-1zM4 4h1v1h-1zM0 2h1v1h-1zM3 3h1v1h-1zM4 0h1v1h-1zM1 2h1v1h-1zM2 4h1v1h-1zM0 1h1v1h-1zM4 3h1v1h-1zM3 1h1v1h-1zM1 3h1v1h-1zM3 0h1v1h-1zM0 4h1v1h-1z'/%3E%3C/svg%3E"); }
+    68% { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 5'%3E%3Cpath d='M0 0h1v1h-1zM3 2h1v1h-1zM1 4h1v1h-1zM2 1h1v1h-1zM0 3h1v1h-1zM2 0h1v1h-1zM4 4h1v1h-1zM0 2h1v1h-1zM3 3h1v1h-1zM4 0h1v1h-1zM1 2h1v1h-1zM2 4h1v1h-1zM0 1h1v1h-1zM4 3h1v1h-1zM3 1h1v1h-1zM1 3h1v1h-1zM3 0h1v1h-1zM0 4h1v1h-1zM4 2h1v1h-1zM1 0h1v1h-1zM2 3h1v1h-1zM4 1h1v1h-1zM3 4h1v1h-1z'/%3E%3C/svg%3E"); }
+    85%, 100% { mask-image: none; }
+  }
+}

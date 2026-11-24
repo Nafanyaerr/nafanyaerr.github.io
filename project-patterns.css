@@ -1,0 +1,49 @@
+/* Card geometry, copy and screenshot framing from Figma 357:2939. */
+.project{position:relative;isolation:isolate;z-index:0;padding:24px;filter:none}
+.project::before{content:"";position:absolute;inset:0;background:var(--page);z-index:1;pointer-events:none}
+.project.has-ornament::before{display:none}
+.project-visual{container-type:inline-size;position:relative;z-index:2;width:100%;border:2px solid #000;background:var(--page);box-shadow:0 0 .8px #959597cc}
+.project-image{aspect-ratio:auto;height:round(nearest,calc(100cqw / (var(--image-ratio))),2px);border-radius:0}
+.project-image img{object-fit:cover}
+.project-copy{position:relative;z-index:4;margin-top:32px;padding:0 8px;background:var(--page)}
+.project-copy h3{font-size:24px;line-height:30px;font-weight:500}
+.project-copy p{font-size:14px;line-height:18px;margin-top:8px}
+.project-column-left,.project-column-right{gap:0}
+.project-mobile{width:328px;margin-top:132px}
+.project-city{margin-top:120px}
+.project-crm{margin-top:168px}
+.project-academy{margin-top:180px}
+.experiments{margin-top:200px}
+
+/* Repeating motifs from Figma 365:8943 run above and beside the image.
+   Complete 8.25px cells are repositioned on resize, never scaled. */
+.project-pattern{position:absolute;top:0;left:0;z-index:5;pointer-events:none}
+.project-pattern svg{display:block;overflow:visible}
+.project-pattern [data-cross]{opacity:0}
+.project.pattern-revealing .project-pattern [data-cross].is-visible{opacity:1}
+.project:focus-visible{z-index:2;outline:none}
+.project[href]:hover{text-decoration:none}
+.project[href]:focus-visible .project-visual{outline:2px solid var(--focus);outline-offset:8px}
+@media(hover:hover) and (pointer:fine){
+  .project:hover{z-index:3}
+}
+@media(prefers-reduced-motion:reduce){
+  .project.pattern-revealing .project-pattern [data-cross]{opacity:1}
+}
+@media(max-width:1100px){
+  .project{padding:18px}
+  .project-mobile,.project-city{margin-top:104px}
+  .project-crm,.project-academy{margin-top:132px}
+  .project-copy h3{font-size:22px;line-height:28px}
+  .project-copy p{font-size:16px;line-height:22px}
+  .experiments{margin-top:140px}
+}
+@media(max-width:700px){
+  .projects{padding-inline:16px;gap:96px;margin-top:96px}
+  .project{padding:8px;margin:0}
+  .project-mobile{width:100%;max-width:328px}
+  .project-copy{margin-top:24px;padding-inline:4px}
+  .project-copy h3{font-size:24px;line-height:30px}
+  .project-copy p{font-size:16px;line-height:24px}
+  .experiments{margin-top:100px}
+}

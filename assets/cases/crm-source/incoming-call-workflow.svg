@@ -1,0 +1,82 @@
+<svg width="410" height="348" viewBox="0 0 410 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="WeFix FMS &#226;&#128;&#148; incoming call workflow">
+<g id="incoming.start / &#208;&#146;&#209;&#133;&#208;&#190;&#208;&#180;&#209;&#143;&#209;&#137;&#208;&#184;&#208;&#185; &#208;&#183;&#208;&#178;&#208;&#190;&#208;&#189;&#208;&#190;&#208;&#186;">
+<rect x="136.341" y="9.17255" width="136.544" height="35.4608" rx="17.7304" fill="white"/>
+<rect x="136.341" y="9.17255" width="136.544" height="35.4608" rx="17.7304" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="&#208;&#146;&#209;&#133;&#208;&#190;&#208;&#180;&#209;&#143;&#209;&#137;&#208;&#184;&#208;&#185; &#208;&#183;&#208;&#178;&#208;&#190;&#208;&#189;&#208;&#190;&#208;&#186;" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="172.443" y="23.8488">&#x412;&#x445;&#x43e;&#x434;&#x44f;&#x449;&#x438;&#x439; &#x437;&#x432;&#x43e;&#x43d;&#x43e;&#x43a;</tspan></text>
+<text id="&#208;&#146;&#208;&#190; &#208;&#178;&#209;&#128;&#208;&#181;&#208;&#188;&#209;&#143; &#209;&#128;&#208;&#176;&#208;&#177;&#208;&#190;&#209;&#130;&#209;&#139; &#208;&#178; Chats" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="169.35" y="34.8697">&#x412;&#x43e; &#x432;&#x440;&#x435;&#x43c;&#x44f; &#x440;&#x430;&#x431;&#x43e;&#x442;&#x44b; &#x432; Chats</tspan></text>
+</g>
+<g id="incoming.known / &#208;&#154;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;&#10;&#208;&#184;&#208;&#183;&#208;&#178;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#181;&#208;&#189;?" clip-path="url(#clip0_580_11307)">
+<path id="Decision outline" d="M204.615 57.8789L253.526 87.2258L204.615 116.573L155.703 87.2258L204.615 57.8789Z" fill="white" stroke="#929A96" stroke-width="0.611393"/>
+<text id="&#208;&#154;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130; &#208;&#184;&#208;&#183;&#208;&#178;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#181;&#208;&#189;?" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="191.625" y="84.798">&#x41a;&#x43b;&#x438;&#x435;&#x43d;&#x442;&#10;</tspan><tspan x="186.158" y="94.9879">&#x438;&#x437;&#x432;&#x435;&#x441;&#x442;&#x435;&#x43d;?</tspan></text>
+</g>
+<g id="incoming.new / &#208;&#157;&#208;&#190;&#208;&#178;&#209;&#139;&#208;&#185; &#208;&#186;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;">
+<rect x="9.17255" y="128.188" width="123.501" height="41.9823" rx="3.05696" fill="white"/>
+<rect x="9.17255" y="128.188" width="123.501" height="41.9823" rx="3.05696" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="&#208;&#157;&#208;&#190;&#208;&#178;&#209;&#139;&#208;&#185; &#208;&#186;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="45.3275" y="146.126">&#x41d;&#x43e;&#x432;&#x44b;&#x439; &#x43a;&#x43b;&#x438;&#x435;&#x43d;&#x442;</tspan></text>
+<text id="&#208;&#157;&#208;&#190;&#208;&#188;&#208;&#181;&#209;&#128; + Source" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="48.6361" y="157.147">&#x41d;&#x43e;&#x43c;&#x435;&#x440; + Source</tspan></text>
+</g>
+<g id="incoming.existing / &#208;&#161;&#209;&#131;&#209;&#137;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#178;&#209;&#131;&#209;&#142;&#209;&#137;&#208;&#184;&#208;&#185; &#208;&#186;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;">
+<rect x="276.551" y="128.188" width="123.501" height="41.9823" rx="3.05696" fill="white"/>
+<rect x="276.551" y="128.188" width="123.501" height="41.9823" rx="3.05696" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="&#208;&#161;&#209;&#131;&#209;&#137;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#178;&#209;&#131;&#209;&#142;&#209;&#137;&#208;&#184;&#208;&#185; &#208;&#186;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="295.687" y="146.126">&#x421;&#x443;&#x449;&#x435;&#x441;&#x442;&#x432;&#x443;&#x44e;&#x449;&#x438;&#x439; &#x43a;&#x43b;&#x438;&#x435;&#x43d;&#x442;</tspan></text>
+<text id="&#208;&#152;&#208;&#188;&#209;&#143; + &#208;&#189;&#208;&#190;&#208;&#188;&#208;&#181;&#209;&#128; / Call from" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="305.338" y="157.147">&#x418;&#x43c;&#x44f; + &#x43d;&#x43e;&#x43c;&#x435;&#x440; / Call from</tspan></text>
+</g>
+<g id="incoming.operator / &#208;&#148;&#208;&#181;&#208;&#185;&#209;&#129;&#209;&#130;&#208;&#178;&#208;&#184;&#208;&#181;&#10;&#208;&#190;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#208;&#176;" clip-path="url(#clip1_580_11307)">
+<path id="Decision outline_2" d="M204.615 194.832L253.526 224.179L204.615 253.526L155.703 224.179L204.615 194.832Z" fill="white" stroke="#929A96" stroke-width="0.611393"/>
+<text id="&#208;&#148;&#208;&#181;&#208;&#185;&#209;&#129;&#209;&#130;&#208;&#178;&#208;&#184;&#208;&#181; &#208;&#190;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#208;&#176;" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="186.985" y="221.751">&#x414;&#x435;&#x439;&#x441;&#x442;&#x432;&#x438;&#x435;&#10;</tspan><tspan x="185.423" y="231.941">&#x43e;&#x43f;&#x435;&#x440;&#x430;&#x442;&#x43e;&#x440;&#x430;</tspan></text>
+</g>
+<g id="incoming.accept / Accept">
+<rect x="9.17255" y="296.118" width="123.501" height="41.9823" rx="3.05696" fill="#EEEFEA"/>
+<rect x="9.17255" y="296.118" width="123.501" height="41.9823" rx="3.05696" stroke="#929A96" stroke-width="0.407595"/>
+<text id="Accept" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="600" letter-spacing="0em"><tspan x="58.2349" y="314.056">Accept</tspan></text>
+<text id="&#208;&#146;&#209;&#133;&#208;&#190;&#208;&#180;&#209;&#143;&#209;&#137;&#208;&#184;&#208;&#185; &#209;&#129;&#209;&#134;&#208;&#181;&#208;&#189;&#208;&#176;&#209;&#128;&#208;&#184;&#208;&#185; &#226;&#134;&#146; OK &#208;&#184;&#208;&#187;&#208;&#184; DE" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="23.5566" y="325.077">&#x412;&#x445;&#x43e;&#x434;&#x44f;&#x449;&#x438;&#x439; &#x441;&#x446;&#x435;&#x43d;&#x430;&#x440;&#x438;&#x439; &#x2192; OK &#x438;&#x43b;&#x438; DE</tspan></text>
+</g>
+<g id="incoming.reset / Reset">
+<rect x="276.551" y="296.118" width="123.501" height="41.9823" rx="20.9911" fill="white"/>
+<rect x="276.551" y="296.118" width="123.501" height="41.9823" rx="20.9911" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="Reset" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="328.326" y="314.056">Reset</tspan></text>
+<text id="&#208;&#158;&#209;&#130;&#208;&#186;&#208;&#187;&#208;&#190;&#208;&#189;&#208;&#184;&#209;&#130;&#209;&#140; &#208;&#178;&#209;&#133;&#208;&#190;&#208;&#180;&#209;&#143;&#209;&#137;&#208;&#184;&#208;&#185; &#208;&#183;&#208;&#178;&#208;&#190;&#208;&#189;&#208;&#190;&#208;&#186;" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="298.088" y="325.077">&#x41e;&#x442;&#x43a;&#x43b;&#x43e;&#x43d;&#x438;&#x442;&#x44c; &#x432;&#x445;&#x43e;&#x434;&#x44f;&#x449;&#x438;&#x439; &#x437;&#x432;&#x43e;&#x43d;&#x43e;&#x43a;</tspan></text>
+</g>
+<path id="incoming.start &#226;&#134;&#146; incoming.known" d="M204.611 44.8359V57.879M206.241 55.0258L204.611 57.879L202.98 55.0258" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="incoming.known &#226;&#134;&#146; incoming.new &#194;&#183; &#208;&#157;&#208;&#181;&#209;&#130;" d="M155.703 87.2266H70.9233V127.986M72.5537 125.133L70.9233 127.986L69.293 125.133" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="incoming.known &#226;&#134;&#146; incoming.existing &#194;&#183; &#208;&#148;&#208;&#176;" d="M253.523 87.2266H338.303V127.986M339.934 125.133L338.303 127.986L336.673 125.133" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="&#208;&#157;&#208;&#181;&#209;&#130;" clip-path="url(#clip2_580_11307)">
+<text id="&#208;&#157;&#208;&#181;&#209;&#130;_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" font-weight="500" letter-spacing="0em"><tspan x="112.09" y="80.7408">&#x41d;&#x435;&#x442;</tspan></text>
+</g>
+<g id="&#208;&#148;&#208;&#176;" clip-path="url(#clip3_580_11307)">
+<text id="&#208;&#148;&#208;&#176;_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" font-weight="500" letter-spacing="0em"><tspan x="286.539" y="80.7408">&#x414;&#x430;</tspan></text>
+</g>
+<path id="incoming.new &#226;&#134;&#146; incoming.operator" d="M70.9219 170.375V224.178H155.702M152.848 222.547L155.702 224.178L152.848 225.808" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="incoming.existing &#226;&#134;&#146; incoming.operator" d="M338.303 170.375V224.178H253.523M256.377 225.808L253.523 224.178L256.377 222.547" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="&#208;&#148;&#208;&#181;&#208;&#185;&#209;&#129;&#209;&#130;&#208;&#178;&#208;&#184;&#208;&#181; &#208;&#190;&#208;&#191;&#208;&#181;&#209;&#128;&#208;&#176;&#209;&#130;&#208;&#190;&#209;&#128;&#208;&#176; / &#208;&#189;&#208;&#176;&#209;&#135;&#208;&#176;&#208;&#187;&#208;&#190; &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#184;&#208;&#187;&#208;&#186;&#208;&#184;" d="M204.613 253.523V272.273" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="incoming.operator &#226;&#134;&#146; incoming.accept &#194;&#183; &#208;&#159;&#209;&#128;&#208;&#184;&#208;&#189;&#209;&#143;&#209;&#130;&#209;&#140;" d="M204.615 272.273H70.9233V295.914M72.5537 293.061L70.9233 295.914L69.293 293.061" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="incoming.operator &#226;&#134;&#146; incoming.reset &#194;&#183; &#208;&#161;&#208;&#177;&#209;&#128;&#208;&#190;&#209;&#129;&#208;&#184;&#209;&#130;&#209;&#140;" d="M204.613 272.273H338.304V295.914M339.935 293.061L338.304 295.914L336.674 293.061" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="&#208;&#159;&#209;&#128;&#208;&#184;&#208;&#189;&#209;&#143;&#209;&#130;&#209;&#140;" clip-path="url(#clip4_580_11307)">
+<text id="&#208;&#159;&#209;&#128;&#208;&#184;&#208;&#189;&#209;&#143;&#209;&#130;&#209;&#140;_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" font-weight="500" letter-spacing="0em"><tspan x="78.6641" y="284.538">&#x41f;&#x440;&#x438;&#x43d;&#x44f;&#x442;&#x44c;</tspan></text>
+</g>
+<g id="&#208;&#161;&#208;&#177;&#209;&#128;&#208;&#190;&#209;&#129;&#208;&#184;&#209;&#130;&#209;&#140;" clip-path="url(#clip5_580_11307)">
+<text id="&#208;&#161;&#208;&#177;&#209;&#128;&#208;&#190;&#209;&#129;&#208;&#184;&#209;&#130;&#209;&#140;_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" font-weight="500" letter-spacing="0em"><tspan x="346.047" y="284.538">&#x421;&#x431;&#x440;&#x43e;&#x441;&#x438;&#x442;&#x44c;</tspan></text>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_580_11307">
+<rect width="97.8228" height="58.6937" fill="white" transform="translate(155.703 57.8789)"/>
+</clipPath>
+<clipPath id="clip1_580_11307">
+<rect width="97.8228" height="58.6937" fill="white" transform="translate(155.703 194.832)"/>
+</clipPath>
+<clipPath id="clip2_580_11307">
+<rect width="35.8684" height="9" fill="white" transform="translate(112.09 74.5898)"/>
+</clipPath>
+<clipPath id="clip3_580_11307">
+<rect width="35.8684" height="9" fill="white" transform="translate(286.539 74.5898)"/>
+</clipPath>
+<clipPath id="clip4_580_11307">
+<rect width="48.9114" height="9" fill="white" transform="translate(78.6641 278.387)"/>
+</clipPath>
+<clipPath id="clip5_580_11307">
+<rect width="48.9114" height="9" fill="white" transform="translate(346.047 278.387)"/>
+</clipPath>
+</defs>
+</svg>

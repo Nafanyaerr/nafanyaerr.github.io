@@ -1,0 +1,65 @@
+<svg width="410" height="335" viewBox="0 0 410 335" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="WeFix FMS &#226;&#128;&#148; outgoing call workflow">
+<g id="outgoing.default / Default page state">
+<rect x="136.341" y="9.17255" width="136.544" height="35.4608" rx="17.7304" fill="white"/>
+<rect x="136.341" y="9.17255" width="136.544" height="35.4608" rx="17.7304" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="Default page state" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="172.343" y="29.1652">Default page state</tspan></text>
+</g>
+<g id="outgoing.dial / &#208;&#146;&#208;&#178;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#184; &#208;&#189;&#208;&#190;&#208;&#188;&#208;&#181;&#209;&#128;">
+<rect x="136.341" y="64.6022" width="136.544" height="35.4608" rx="3.05696" fill="white"/>
+<rect x="136.341" y="64.6022" width="136.544" height="35.4608" rx="3.05696" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="&#208;&#146;&#208;&#178;&#208;&#181;&#209;&#129;&#209;&#130;&#208;&#184; &#208;&#189;&#208;&#190;&#208;&#188;&#208;&#181;&#209;&#128;" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="179.225" y="79.2785">&#x412;&#x432;&#x435;&#x441;&#x442;&#x438; &#x43d;&#x43e;&#x43c;&#x435;&#x440;</tspan></text>
+<text id="&#208;&#157;&#208;&#176; &#208;&#186;&#208;&#187;&#208;&#176;&#208;&#178;&#208;&#184;&#208;&#176;&#209;&#130;&#209;&#131;&#209;&#128;&#208;&#181;" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="183.967" y="90.2994">&#x41d;&#x430; &#x43a;&#x43b;&#x430;&#x432;&#x438;&#x430;&#x442;&#x443;&#x440;&#x435;</tspan></text>
+</g>
+<g id="outgoing.wait / OUTGOING CALL">
+<rect x="136.341" y="128.188" width="136.544" height="41.9823" rx="3.05696" fill="#EEEFEA"/>
+<rect x="136.341" y="128.188" width="136.544" height="41.9823" rx="3.05696" stroke="#929A96" stroke-width="0.407595"/>
+<text id="OUTGOING CALL" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="600" letter-spacing="0em"><tspan x="174.26" y="146.126">OUTGOING CALL</tspan></text>
+<text id="Response waiting" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="180.866" y="157.147">Response waiting</tspan></text>
+</g>
+<g id="outgoing.chat / Chat tab">
+<rect x="9.17255" y="214.598" width="123.501" height="41.9823" rx="3.05696" fill="white"/>
+<rect x="9.17255" y="214.598" width="123.501" height="41.9823" rx="3.05696" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="Chat tab" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="55.8454" y="232.536">Chat tab</tspan></text>
+<text id="&#208;&#152;&#209;&#129;&#209;&#130;&#208;&#190;&#209;&#128;&#208;&#184;&#209;&#143; / &#208;&#178;&#208;&#178;&#208;&#190;&#208;&#180; &#209;&#129;&#208;&#190;&#208;&#190;&#208;&#177;&#209;&#137;&#208;&#181;&#208;&#189;&#208;&#184;&#209;&#143;" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="33.1526" y="243.557">&#x418;&#x441;&#x442;&#x43e;&#x440;&#x438;&#x44f; / &#x432;&#x432;&#x43e;&#x434; &#x441;&#x43e;&#x43e;&#x431;&#x449;&#x435;&#x43d;&#x438;&#x44f;</tspan></text>
+</g>
+<g id="outgoing.answered / &#208;&#154;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130; &#208;&#190;&#209;&#130;&#208;&#178;&#208;&#181;&#209;&#130;&#208;&#184;&#208;&#187;">
+<rect x="276.555" y="214.598" width="123.501" height="41.9823" rx="3.05696" fill="#EEEFEA"/>
+<rect x="276.555" y="214.598" width="123.501" height="41.9823" rx="3.05696" stroke="#929A96" stroke-width="0.407595"/>
+<text id="&#208;&#154;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130; &#208;&#190;&#209;&#130;&#208;&#178;&#208;&#181;&#209;&#130;&#208;&#184;&#208;&#187;" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="600" letter-spacing="0em"><tspan x="309.422" y="232.536">&#x41a;&#x43b;&#x438;&#x435;&#x43d;&#x442; &#x43e;&#x442;&#x432;&#x435;&#x442;&#x438;&#x43b;</tspan></text>
+<text id="&#208;&#144;&#208;&#186;&#209;&#130;&#208;&#184;&#208;&#178;&#208;&#189;&#209;&#139;&#208;&#185; &#208;&#183;&#208;&#178;&#208;&#190;&#208;&#189;&#208;&#190;&#208;&#186; + &#209;&#130;&#208;&#176;&#208;&#185;&#208;&#188;&#208;&#181;&#209;&#128;" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="300.324" y="243.557">&#x410;&#x43a;&#x442;&#x438;&#x432;&#x43d;&#x44b;&#x439; &#x437;&#x432;&#x43e;&#x43d;&#x43e;&#x43a; + &#x442;&#x430;&#x439;&#x43c;&#x435;&#x440;</tspan></text>
+</g>
+<g id="outgoing.job / New job &#226;&#134;&#146; Create">
+<rect x="276.555" y="283.075" width="123.501" height="41.9823" rx="20.9911" fill="white"/>
+<rect x="276.555" y="283.075" width="123.501" height="41.9823" rx="20.9911" stroke="#CDD1CB" stroke-width="0.407595"/>
+<text id="New job &#226;&#134;&#146; Create" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="7.33671" font-weight="500" letter-spacing="0em"><tspan x="306.785" y="301.013">New job &#x2192; Create</tspan></text>
+<text id="&#208;&#161;&#208;&#190;&#208;&#183;&#208;&#180;&#208;&#176;&#208;&#189;&#208;&#184;&#208;&#181; &#209;&#128;&#208;&#176;&#208;&#177;&#208;&#190;&#209;&#130;&#209;&#139; &#226;&#134;&#146; OB" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" letter-spacing="0em"><tspan x="305.267" y="312.034">&#x421;&#x43e;&#x437;&#x434;&#x430;&#x43d;&#x438;&#x435; &#x440;&#x430;&#x431;&#x43e;&#x442;&#x44b; &#x2192; OB</tspan></text>
+</g>
+<path id="outgoing.default &#226;&#134;&#146; outgoing.dial" d="M204.615 44.8359V64.4005M206.245 61.5473L204.615 64.4005L202.984 61.5473" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="outgoing.dial &#226;&#134;&#146; outgoing.wait &#194;&#183; &#208;&#159;&#208;&#190;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#189;&#208;&#184;&#209;&#130;&#209;&#140;" d="M204.615 100.27V127.986M206.245 125.133L204.615 127.986L202.984 125.133" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="&#208;&#159;&#208;&#190;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#189;&#208;&#184;&#209;&#130;&#209;&#140;" clip-path="url(#clip0_580_11350)">
+<text id="&#208;&#159;&#208;&#190;&#208;&#183;&#208;&#178;&#208;&#190;&#208;&#189;&#208;&#184;&#209;&#130;&#209;&#140;_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" font-weight="500" letter-spacing="0em"><tspan x="211.949" y="114.979">&#x41f;&#x43e;&#x437;&#x432;&#x43e;&#x43d;&#x438;&#x442;&#x44c;</tspan></text>
+</g>
+<path id="outgoing.wait &#226;&#134;&#146; outgoing.chat &#194;&#183; Chat / Caller" d="M136.139 149.18H70.9233V214.395M72.5537 211.542L70.9233 214.395L69.293 211.542" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Chat tab &#226;&#134;&#146; Response waiting / &#208;&#190;&#208;&#177;&#209;&#128;&#208;&#176;&#209;&#130;&#208;&#189;&#208;&#176;&#209;&#143; &#209;&#129;&#209;&#130;&#209;&#128;&#208;&#181;&#208;&#187;&#208;&#186;&#208;&#176;" d="M133.285 147.551L136.138 149.181L133.285 150.812" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Chat / Caller" clip-path="url(#clip1_580_11350)">
+<text id="Chat / Caller_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" font-weight="500" letter-spacing="0em"><tspan x="77.0352" y="143.104">Chat / Caller</tspan></text>
+</g>
+<path id="outgoing.wait &#226;&#134;&#146; outgoing.answered &#194;&#183; &#208;&#158;&#209;&#130;&#208;&#178;&#208;&#181;&#209;&#130; &#208;&#186;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;" d="M273.09 149.18H338.305V214.395M339.935 211.542L338.305 214.395L336.675 211.542" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="&#208;&#158;&#209;&#130;&#208;&#178;&#208;&#181;&#209;&#130; &#208;&#186;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;" clip-path="url(#clip2_580_11350)">
+<text id="&#208;&#158;&#209;&#130;&#208;&#178;&#208;&#181;&#209;&#130; &#208;&#186;&#208;&#187;&#208;&#184;&#208;&#181;&#208;&#189;&#209;&#130;&#208;&#176;_2" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="5.70633" font-weight="500" letter-spacing="0em"><tspan x="282.059" y="143.104">&#x41e;&#x442;&#x432;&#x435;&#x442; &#x43a;&#x43b;&#x438;&#x435;&#x43d;&#x442;&#x430;</tspan></text>
+</g>
+<path id="outgoing.answered &#226;&#134;&#146; outgoing.job" d="M338.306 256.785V282.871M339.937 280.018L338.306 282.871L336.676 280.018" stroke="#929A96" stroke-width="0.611393" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_580_11350">
+<rect width="52.1722" height="9" fill="white" transform="translate(211.949 108.828)"/>
+</clipPath>
+<clipPath id="clip1_580_11350">
+<rect width="57.0633" height="9" fill="white" transform="translate(77.0352 136.953)"/>
+</clipPath>
+<clipPath id="clip2_580_11350">
+<rect width="55.0253" height="9" fill="white" transform="translate(282.059 136.953)"/>
+</clipPath>
+</defs>
+</svg>

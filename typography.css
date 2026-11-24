@@ -1,0 +1,219 @@
+/* Shared type scale. Rem units respect the reader's preferred font size. */
+:root {
+  --ink:#25272a;
+  --caption-color:#6b7d7d;
+  --body-font:Inter,Arial,sans-serif;
+  --display-font:Tektur,monospace;
+  --type-14:.875rem;
+  --type-16:1rem;
+  --type-18:1.125rem;
+  --type-20:1.25rem;
+  --type-24:1.5rem;
+  --type-28:1.75rem;
+  --type-32:2rem;
+  --type-48:3rem;
+  --type-body:var(--type-16);
+  --type-body-leading:1.5;
+  --type-card:var(--type-24);
+  --type-section:var(--type-28);
+  --type-section-leading:1.285714;
+  --type-feature:var(--type-48);
+  --type-feature-leading:1.166667;
+  --type-display:var(--type-48);
+  --type-display-leading:1.166667;
+  --type-metric:var(--type-48);
+}
+body { color:var(--ink); font-size:var(--type-body); font-weight:400; line-height:var(--type-body-leading); }
+body :is(h1,h2,h3,p,li,dt,dd,figcaption) { overflow-wrap:break-word; }
+
+/* Navigation and supporting information share the same readable size. */
+body .site-header nav a,
+.case-review-header,
+.case-review-header :is(a.case-review-back,.case-review-links a),
+.secondary-action.secondary-action,
+body .site-footer :is(.footer-link,.copyright),
+.case-review :is(.case-eyebrow,.story-label,.review-fact-label),
+.case-source .source-note,
+.case-story .story-facts .story-label {
+  font-size:var(--type-16);
+  line-height:1.5;
+}
+.case-page {
+  --ink:#000;
+  --case-menu-size:var(--type-16);
+  --caption-color:#596c6c;
+}
+.case-review {
+  --type-body:var(--type-18);
+  --type-body-leading:var(--type-28);
+}
+.review-nav-caption { letter-spacing:.04em; }
+.review-nav-title,.review-nav-arrow { font-size:var(--type-20); line-height:1.4; }
+.case-lightbox-caption { max-height:30dvh; }
+
+/* Main page headings and project cards. */
+body .hero .hero-content h1,
+.home-frame501 .hero .hero-content h1 {
+  font-size:var(--type-28);
+  line-height:1.428571;
+}
+body:not(.case-page) main h2,
+.home-frame501 h2 {
+  font-size:var(--type-feature);
+  line-height:var(--type-feature-leading);
+}
+body .project .project-copy h3,
+.home-frame501 .figma-work .project .project-copy h3 {
+  font-size:var(--type-card);
+  line-height:1.333333;
+}
+body .project .project-copy p {
+  font-size:var(--type-14);
+  line-height:1.25rem;
+  color:var(--caption-color);
+}
+.home-frame501 .figma-work .project .project-copy {
+  container-type:inline-size;
+}
+.home-frame501 .figma-work .project .project-copy p {
+  font-size:var(--type-18);
+  font-size:clamp(var(--type-16),calc(.75rem + 1.25cqi),var(--type-18));
+  line-height:var(--type-28);
+  line-height:clamp(var(--type-24),calc(1rem + 2.5cqi),var(--type-28));
+  color:#000;
+}
+.about-copy { font-size:var(--type-body); font-weight:400; line-height:var(--type-body-leading); max-width:60ch; }
+
+/* One hierarchy for every case: display title, numbered chapters, subheadings. */
+.case-review .case-intro h1 {
+  font-size:var(--type-display);
+  line-height:var(--type-display-leading);
+  overflow-wrap:anywhere;
+}
+main.case-story.case-review h2 {
+  font-size:var(--type-section);
+  line-height:var(--type-section-leading);
+}
+.case-page main.case-story.case-review h3 {
+  color:#000;
+  font-size:var(--type-20);
+  line-height:1.4;
+}
+.case-review .story-lead,
+.case-review .review-opening-copy>.story-lead+p {
+  color:var(--ink);
+  font-size:var(--type-body);
+  font-weight:500;
+  line-height:var(--type-body-leading);
+}
+.case-review :is(.story-section-copy,.review-overview-copy,.source-prose,.case-prose,.story-summary,p.result-lead),
+.case-review :is(.review-fact,.story-facts) :is(p,li,.source-prose):not(.story-label),
+.case-review :is(.result-details dd,.result-context,.result-note),
+.case-story .story-list>li,
+.report-brief p,.report-issues p {
+  font-size:var(--type-body);
+  line-height:var(--type-body-leading);
+}
+.case-review :is(.source-prose,.case-prose,.story-section-copy,.story-summary) {
+  --review-read:64ch;
+}
+.result-details dt,.result-metrics dt { font-size:var(--type-16); line-height:1.5; }
+.result-value,.case-review .review-fact .review-stat {
+  font-size:var(--type-metric);
+  line-height:1.166667;
+}
+.report-narrative .story-section-number { font-family:inherit; font-size:inherit; font-weight:inherit; line-height:inherit; }
+
+/* A flowing caption stays legible when text is enlarged; it cannot cover screens. */
+.report-panorama figcaption {
+  position:static;
+  width:auto;
+  max-width:64ch;
+  margin:16px 0 0;
+}
+.report-panorama figcaption strong {
+  margin-bottom:8px;
+  font-size:var(--type-24);
+  line-height:1.333333;
+}
+
+/* Media and project navigation captions share one size. */
+.case-page main.case-review figcaption,
+.case-lightbox-caption,
+.review-nav-caption {
+  font-size:var(--type-14);
+  font-weight:400;
+  line-height:1.25rem;
+}
+
+figcaption,
+.case-page main.case-review figcaption,
+.case-lightbox-caption,
+.case-review :is(.case-eyebrow,.story-label,.review-fact-label,.case-index,.case-small-label,.case-meta dt),
+.case-source :is(.source-caption,.source-note),
+.case-editorial .case-role-note,
+.result-details dd,.result-context,.story-results .result-note,
+.result-metrics dt,
+.review-nav-caption,
+.history-page .history-table th,
+body .site-footer .copyright {
+  color:var(--caption-color);
+}
+
+.case-page main.case-review :is(p, li, dt, dd):not(.case-eyebrow) {
+  color:var(--ink);
+}
+
+/* Text containers may grow. This also supports browser text-size preferences. */
+body:not(.case-page) .site-header {
+  height:auto;
+  min-height:80px;
+  padding-block:16px;
+}
+body.home-frame501 .site-header { height:auto; min-height:72px; padding-block:16px; }
+body:not(.case-page) .site-header nav { flex-wrap:wrap; max-width:100%; }
+body:not(.case-page) .site-header nav a[data-menu] {
+  width:auto;
+  height:auto;
+  min-height:44px;
+  white-space:normal;
+  max-width:100%;
+}
+.case-review-header :is(a.case-review-back,.case-review-links a) {
+  white-space:normal;
+  overflow-wrap:anywhere;
+  min-width:0;
+  max-width:100%;
+}
+.review-nav-card,.review-nav-copy { min-width:0; }
+.review-nav-title { overflow-wrap:anywhere; }
+body .site-footer,
+body:is(.home-frame501,.case-page) .site-footer {
+  grid-template-columns:minmax(0,1fr) max-content max-content auto;
+}
+body .site-footer .footer-link { width:auto; max-width:100%; overflow-wrap:anywhere; }
+body .copyright { flex-wrap:wrap; }
+.history-page .history-table td { overflow-wrap:anywhere; }
+
+@media(max-width:1100px) {
+  :root {
+    --type-card:var(--type-20);
+    --type-metric:var(--type-32);
+  }
+  body .hero .hero-content h1,
+  .home-frame501 .hero .hero-content h1 { font-size:var(--type-24); line-height:1.5; }
+  body .project .project-copy h3,
+  .home-frame501 .figma-work .project .project-copy h3 { line-height:1.4; }
+  .result-value,.case-review .review-fact .review-stat { line-height:1.25; }
+}
+@media(max-width:760px) {
+  :root {
+    --type-section:var(--type-24);
+    --type-section-leading:1.333333;
+  }
+  body .site-footer { display:flex; flex-wrap:wrap; gap:24px; }
+  body .site-footer .copyright { width:100%; }
+  body .site-footer .back-top { margin-left:auto; }
+  .history-page .site-footer .back-top { margin-left:auto; }
+  .case-review .review-opening-copy>p:not(.case-eyebrow) { max-width:100%; }
+}

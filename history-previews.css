@@ -1,0 +1,73 @@
+/* History previews are decorative: the table and its links stay interactive. */
+.history-table .history-project-link:hover { text-decoration:none; }
+.history-preview {
+  position:fixed;
+  left:0;
+  top:0;
+  width:0;
+  height:0;
+  z-index:30;
+  pointer-events:none;
+}
+.history-preview-card {
+  position:absolute;
+  left:0;
+  top:0;
+  background:transparent;
+  opacity:0;
+  transition:opacity 220ms ease-out;
+  pointer-events:none;
+}
+.history-preview-card.is-visible { opacity:1; }
+.history-preview-card[data-project="city"] { background:var(--page,#faf9f5); }
+.history-table .history-project-link:focus-visible {outline:2px solid currentColor;outline-offset:4px}
+.history-preview-image {
+  position:absolute;
+  overflow:hidden;
+  background:var(--page,#faf9f6);
+}
+.history-preview-image img {
+  display:block;
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  object-position:center;
+}
+.history-preview-card[data-project="reports"] .history-preview-image img {
+  height:158.46%;
+  object-fit:fill;
+}
+.history-preview-card[data-project="academy"] .history-preview-image img {
+  height:100.67%;
+  object-fit:fill;
+}
+.history-preview-card[data-project="mobile"] .history-preview-image img { object-fit:contain; }
+.history-preview-card[data-project="city"] .history-preview-image { background:#fff; }
+.history-preview-card[data-project="city"] .history-preview-underlay {
+  height:158.46%;
+  object-fit:fill;
+}
+.history-preview-card[data-project="city"] .history-preview-image img:last-child {
+  width:144.7%;
+  height:247.21%;
+  left:-22.35%;
+  object-fit:fill;
+}
+.history-preview-frame {
+  position:absolute;
+  inset:0;
+  display:block;
+  overflow:visible;
+  max-width:none;
+  pointer-events:none;
+}
+@media(max-width:650px),(hover:none),(pointer:coarse) {
+  .history-preview { display:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .history-preview-card { transition:none; }
+}

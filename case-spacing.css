@@ -1,0 +1,148 @@
+/* Shared vertical rhythm for the six case studies.
+   Keep the authored eight-column grid, page edges, image spans and crops.
+   All authored spacing uses whole 4px steps; intrinsic media heights remain fluid. */
+.case-page {
+  --space-detail:8px;
+  --space-caption:12px;
+  --space-paragraph:12px;
+  --space-heading:24px;
+  --space-block:40px;
+  --space-step:64px;
+  --space-chapter:96px;
+  --space-panel:32px;
+  --space-opening:40px;
+  --space-list:12px;
+  --space-list-block:24px;
+  --chapter-gap:var(--space-chapter);
+}
+@media(max-width:1000px) {
+  .case-page {
+    --space-block:32px;
+    --space-step:48px;
+    --space-chapter:72px;
+    --space-panel:24px;
+    --space-opening:32px;
+  }
+}
+@media(max-width:760px) {
+  .case-page {
+    --space-paragraph:8px;
+    --space-list-block:16px;
+    --space-heading:16px;
+    --space-chapter:64px;
+    --space-opening:24px;
+  }
+}
+
+/* Chapters, subsections and their introductions have separate, consistent steps. */
+.case-page main.case-review .story-chapter,
+.case-page main.case-review .source-heading.story-chapter,
+.case-page main.case-review .report-brief {
+  margin-block-start:var(--space-chapter);
+}
+.case-page main.case-review :is(.story-step,.report-step) {
+  margin-block-start:var(--space-step);
+  padding-block-start:0;
+}
+.case-page main.case-review :is(.story-step,.report-step):first-child {
+  margin-block-start:0;
+}
+.case-page main.case-review :is(.case-section-heading,.source-heading,.report-chapter-heading) {
+  margin-block-end:var(--space-heading);
+}
+.case-page main.case-review :is(.case-section-heading,.source-heading,.report-chapter-heading)
+  + :is(.source-block,.story-step,.report-step) { margin-block-start:0; }
+.case-page main.case-review :is(.story-section-row,.review-overview-row,.review-brief),
+.case-page main.case-review .report-brief { row-gap:var(--space-heading); }
+
+/* Paragraphs retain one gap even when the source puts them in separate wrappers. */
+.case-page main.case-review :is(.source-prose,.case-prose,.story-section-copy,.story-summary) p {
+  margin-block:0 var(--space-paragraph);
+}
+.case-page main.case-review :is(.source-prose,.case-prose,.story-section-copy,.story-summary) p:last-child {
+  margin-block-end:0;
+}
+.case-page main.case-review .source-prose + .source-prose,
+.case-page main.case-review .source-prose > div + div,
+.case-page main.case-review .story-section-copy > div[data-source-node] + div[data-source-node],
+.case-page main.case-review .story-section-copy > .source-block + .source-block {
+  margin-block-start:var(--space-paragraph);
+}
+.case-page main.case-review .source-subheading {
+  margin-block:var(--space-block) var(--space-heading);
+}
+.case-page main.case-review .source-subheading:first-child,
+.case-page main.case-review .story-section-heading :is(h2,h3) { margin-block:0; }
+.case-page main.case-review .report-premise { margin-block-end:var(--space-paragraph); }
+.case-page main.case-review :is(.report-brief,.report-issues) h3 + p,
+.case-page main.case-review .report-brief .report-brief-copy {
+  margin-block-start:var(--space-caption);
+}
+.case-page main.case-review .report-brief p + p { margin-block-start:var(--space-paragraph); }
+
+/* Lists: consistent indentation, item spacing and first-line stitch alignment. */
+.case-page main.case-review :is(.source-prose,.case-prose) :is(ul,ol),
+.case-page main.case-review .story-list {
+  margin-block:var(--space-list-block);
+}
+.case-page main.case-review p:has(+ .story-list) { margin-block-end:0; }
+.case-page main.case-review .story-list { row-gap:var(--space-list); }
+.case-page main.case-review :is(.source-prose,.case-prose) li + li {
+  margin-block-start:var(--space-list);
+}
+.case-page main.case-review .story-list > li { margin-block:0; }
+.case-page main.case-review .story-list > li + li { margin-block-start:0; }
+.case-page main.case-review .story-section-copy .story-list > li::before { top:8px; }
+.case-page main.case-review .story-section-copy > :first-child { margin-block-start:0; }
+.case-page main.case-review .story-section-copy > :last-child,
+.case-page main.case-review .review-overview-copy > p:last-child { margin-block-end:0; }
+
+/* Text-to-media transitions and continuation rows use the same distance. */
+.case-page main.case-review .source-block:where(:not(.story-chapter)) { margin-block-start:var(--space-block); }
+.case-page main.case-review .source-block:first-child,
+.case-page main.case-review .case-section > .source-block:first-of-type,
+.case-page main.case-review .story-section-copy > .source-block:first-child {
+  margin-block-start:0;
+}
+.case-page main.case-review :is(.story-section-row,.review-overview-row,.source-prose)
+  + :is(.source-figure,.source-image-grid),
+.case-page main.case-review :is(.source-figure,.source-image-grid) + .source-prose,
+.case-page main.case-review .story-section-row--continuation,
+.case-page main.case-review .report-plates {
+  margin-block-start:var(--space-block);
+}
+.case-page main.case-review :is(.source-figure,.source-image-grid)
+  + :is(.source-figure,.source-image-grid) { margin-block-start:var(--review-gap); }
+/* Nested figures already get their spacing from the parent grid. */
+.case-page main.case-review :is(.source-image-grid,.report-plates,.report-stack)
+  > :is(.source-figure,.source-image-grid) { margin-block:0; }
+.case-page main.case-review .review-opening { row-gap:var(--space-opening); }
+.case-page main.case-review :is(.case-feature-cover,.report-panorama) {
+  margin-block:var(--space-opening) 0;
+}
+.case-page main.case-review .case-feature-cover + :is(.review-overview-row,.story-overview,.source-block) {
+  margin-block-start:var(--space-chapter);
+}
+.case-page main.case-review .case-intro { margin-block-end:0; }
+
+/* Captions above and below media share a gap, without touching the image canvas. */
+.case-page main.case-review :is(.source-figure,.case-feature-cover,.report-panorama,.case-video) > figcaption {
+  margin-block:var(--space-caption) 0;
+}
+.case-page main.case-review .source-figure > figcaption:first-child {
+  margin-block:0 var(--space-caption);
+}
+.case-page main.case-review .report-panorama figcaption strong { margin-block-end:var(--space-detail); }
+
+/* Supporting information and results share the article's rhythm. */
+.case-page main.case-review .review-remaining-facts { margin-block-start:var(--space-paragraph); }
+.case-page main.case-review :is(.review-fact-label,p.story-label) { margin-block-end:var(--space-detail); }
+.case-page main.case-review .result-summary { row-gap:var(--space-block); }
+.case-page main.case-review .result-summary h3 { margin-block:0 var(--space-caption); }
+.case-page main.case-review .result-details dd,
+.case-page main.case-review .result-context { margin-block:var(--space-detail) 0; }
+.case-page main.case-review :is(.result-lead,.result-note) { margin-block:0; }
+
+@media(max-width:760px) {
+  .case-page main.case-review .report-opening .story-lead { margin-block-start:var(--space-heading); }
+}

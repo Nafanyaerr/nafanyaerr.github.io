@@ -1,0 +1,27 @@
+@import url('stitch-scale.css');
+
+/* Figma uses distinct stitch scales. UI artwork is snapped to a 2px grid;
+   the established 8.25px goat and project stitches keep their geometry. */
+:root{--cross-size:var(--goat-stitch);--header-cross-size:4px;--footer-cross-size:2px}
+.hero-art{width:264px;height:372px;flex-shrink:0}
+.goat-scale,.hero-art .goat-scale,.hero-art img{width:264px;height:371.25px;max-width:none;flex-shrink:0}
+
+/* Original footer motifs, now on 2px cells, with compact reference spacing. */
+.site-footer{grid-template-columns:minmax(0,1fr) 102px 64px 158px;column-gap:46px;min-height:76px;padding-block:8px;align-items:center}
+.copyright{display:flex;gap:10px;font-size:16px;line-height:20px}
+.copyright span:first-child{flex:0 0 16px;width:16px}
+.copyright img{width:62px;height:32px;max-width:none}
+.email{width:102px;flex:none}
+.linkedin{width:64px;flex:none}
+.back-top{width:72px;height:72px;margin-left:0;justify-self:end}
+.back-top img{width:72px;height:72px;max-width:none}
+@media(max-width:1100px){
+  .site-footer{grid-template-columns:minmax(0,1fr) 102px 64px 72px;column-gap:24px}
+  .copyright{font-size:14px;gap:8px}
+}
+@media(max-width:700px){
+  .hero-art{align-self:center;margin-right:0}
+  .site-footer{display:flex;flex-wrap:wrap;gap:24px 32px;padding-block:16px 24px}
+  .copyright{width:100%;gap:10px}
+  .back-top{margin-left:auto}
+}

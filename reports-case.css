@@ -1,0 +1,20 @@
+.case-report-hero .case-image-viewport{aspect-ratio:364/234.359375;position:relative}
+.case-report-hero .case-image-viewport img{position:absolute;inset:0}
+.case-report-existing-reports .case-image-viewport{aspect-ratio:225.412/73.976;position:relative}
+.case-report-existing-reports .case-image-viewport img{position:absolute;width:102.35%;height:101.36%;left:-2.35%;top:-1.34%}
+.case-report-working-notes .case-image-viewport{aspect-ratio:509.45/286.175;position:relative;background:transparent}
+.case-notes-stage{position:absolute;left:0;top:100%;width:56.1733%;height:178.02%;transform:rotate(-90deg);transform-origin:0 0}
+.case-report-working-notes .case-image-viewport img{position:absolute;width:147.59%;height:110.08%;left:-42.22%;top:-4.67%;max-width:none}
+.case-report-research{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:start}
+.case-report-stack{display:grid;gap:32px;min-width:0}
+.case-report-process{display:grid;grid-template-columns:1fr 1.4fr;gap:32px;align-items:center}
+.case-report-research figcaption,.case-report-process figcaption{display:block}
+.case-report-research .case-image-hint,.case-report-process .case-image-hint{display:block;margin-top:8px}
+.case-report-journey{max-width:752px;margin-inline:auto}
+.case-report-validation{max-width:960px;margin-inline:auto}
+.case-report-result{display:grid;grid-template-columns:240px minmax(0,1fr);gap:24px 64px;align-items:center}
+.case-report-result::before{grid-column:1/-1;margin-bottom:0}
+.case-report-result .case-metrics{grid-template-columns:1fr}
+.case-report-result .case-metrics-intro{font-size:18px;line-height:30px;margin:0;max-width:600px}
+@media(max-width:1100px){.case-report-result{grid-template-columns:200px minmax(0,1fr);column-gap:40px}.case-report-research,.case-report-process,.case-report-stack{gap:24px}}
+@media(max-width:600px){.case-report-research,.case-report-process,.case-report-result{grid-template-columns:1fr;gap:32px}.case-report-result .case-metrics-intro{font-size:16px;line-height:28px}.case-report-result::before{grid-column:1}.case-report-research .case-image-hint,.case-report-process .case-image-hint{display:none}}

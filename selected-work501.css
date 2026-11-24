@@ -1,0 +1,57 @@
+/* Desktop - 14 / 501:4009. Six cases share a 1152-unit grid.
+   Cross frames are the original Figma SVG assets. */
+.figma-work{container-type:inline-size}
+.figma-work #selected-title{text-align:center}
+.figma-work .work-paired-cases {
+  --card-x:calc(100cqw * 16 / 1152);--card-y:calc(100cqw * 24 / 1152);
+  --copy-gap:calc(100cqw * 32 / 1152);--row-gap:calc(100cqw * 16 / 1152);
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-rows:minmax(calc(100cqw * 497 / 1152),auto) minmax(calc(100cqw * 519.766 / 1152),auto) auto;
+  gap:0 calc(100cqw * 32 / 1152);align-items:start;
+  margin:calc(100cqw * 72 / 1152) 0 0;padding:0;
+}
+.figma-work .work-paired-cases>.project{box-sizing:border-box;align-self:start;justify-self:start;width:100%;max-width:none;min-width:0;margin:0;padding:var(--card-y) var(--card-x);order:initial}
+.figma-work .work-paired-cases>.project-crm{width:99.464286%}
+.figma-work .work-paired-cases>.project-mobile{width:99.821429%;margin-left:calc(100cqw / 1152)}
+.figma-work .project .project-visual{container-type:normal;width:calc(100cqw * 527.625549 / 1152);max-width:none;overflow:visible;border:0;box-shadow:none;background:transparent;aspect-ratio:527.625549/346.335846}
+.figma-work .project .cover-frame{position:absolute;inset:0;display:block;width:100%;height:auto;pointer-events:none;transition:opacity 180ms ease}
+.figma-work .project .project-image{position:absolute;left:1.480742%;top:2.213986%;width:97.038515%;height:95.572553%;aspect-ratio:512/331;overflow:hidden;border:0;background:white;transform-origin:center;transition:transform 230ms cubic-bezier(.2,.7,.2,1)}
+.figma-work .project .project-image::after{content:none}
+.figma-work .project-crm .project-visual{margin-left:calc(100cqw * -1.312775 / 1152)}
+.figma-work .project .project-copy{width:100%;margin:var(--copy-gap) 0 0;padding:0 8px}
+.figma-work .project .project-copy h3{font:500 24px/29px var(--body-font)}
+.figma-work .project .project-copy p{font:400 var(--type-14,.875rem)/1.25rem var(--body-font);margin:8px 0 0}
+.figma-work .project-callgrid .project-image img,.figma-work .project-crm .project-image img{inset:0;width:100%;height:100%;object-fit:cover}
+.figma-work .project-reports .project-image img{width:100%;height:158.46%;top:0;left:0;object-fit:fill}
+.figma-work .project-city .project-image img{width:144.7%;height:247.21%;top:0;left:-22.35%;object-fit:fill}
+.figma-work .project-academy .project-image img{width:100%;height:100.67%;top:0;left:0;object-fit:fill}
+.figma-work .project-mobile .project-visual{display:flex;justify-content:space-between;width:100%;aspect-ratio:527/346.335846}
+.figma-work .phone-window{display:block;position:relative;width:31.287171%;aspect-ratio:164.883392/346.335846}
+.figma-work .project .phone-window .project-image{left:4.063004%;top:2.085450%;width:91.87445%;height:95.572553%;aspect-ratio:151.48570/331;background:transparent}
+.figma-work .project .phone-window .project-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
+@media(hover:hover) and (pointer:fine){.figma-work .project:hover .cover-frame{opacity:0}}
+.figma-work .project:focus-visible .cover-frame{opacity:0}
+@media(min-width:701px) and (max-width:1000px){
+  .figma-work .project .project-copy{padding-inline:4px}
+  .figma-work .project .project-copy h3{font-size:20px;line-height:26px}
+  .figma-work .work-paired-cases{grid-template-rows:none;row-gap:48px}
+}
+@media(max-width:700px){
+  .figma-work .work-paired-cases{--card-x:4px;--card-y:4px;--copy-gap:20px;grid-template-columns:minmax(0,1fr);grid-template-rows:none;gap:56px;margin-top:40px}
+  .figma-work .work-paired-cases>.project{width:100%;margin:0}
+  .figma-work .project .project-visual{width:100%}
+  .figma-work .project .project-copy{padding-inline:0}
+  .figma-work .project .project-copy h3{font-size:22px;line-height:28px}
+}
+@media(prefers-reduced-motion:reduce){.figma-work .project .project-image,.figma-work .cover-frame{transition:none}}
+
+/* Symmetric media insets and native-size stitches at every breakpoint. */
+.figma-work .work-paired-cases>.project{width:100%;margin-left:0}
+.figma-work .project .project-visual{margin-inline:auto;max-width:100%}
+.figma-work .project .project-visual .cover-frame{width:100%;height:100%}
+.figma-work .project .project-image,
+.figma-work .project .phone-window .project-image{
+  inset:var(--frame-cell,8.25px);width:auto;height:auto;aspect-ratio:auto;
+}
+.figma-work .project-mobile .project-visual{align-items:center}
+.figma-work .phone-window{flex:none}

@@ -1,0 +1,10 @@
+/* Finite pixel reveal on the unchanged native Figma SVG assets. */
+:is(.site-header nav a,.case-review-header a,.site-footer .footer-link):is(:hover,:focus-visible,:active) :is(.menu-bracket,.footer-link-spark){animation:menu-stitch-in 150ms steps(5,end) both,ui-stitch-glitch 112ms steps(1,end) 60ms both}
+.footer-link:is(:hover,:focus-visible,:active) .footer-link-underline{animation:footer-stitch-in 180ms steps(var(--stitch-count,24),end) both}
+.footer-link.linkedin{--stitch-count:15}
+@keyframes menu-stitch-in{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+@keyframes footer-stitch-in{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+@keyframes ui-stitch-glitch{0%,30%,60%,100%{opacity:1}45%{opacity:.4}}
+@media(prefers-reduced-motion:reduce){
+ :is(.site-header nav a,.case-review-header a,.site-footer .footer-link):is(:hover,:focus-visible,:active) :is(.menu-bracket,.footer-link-spark,.footer-link-underline){animation:none;clip-path:none;opacity:1}
+}

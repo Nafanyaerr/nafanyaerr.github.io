@@ -1,0 +1,387 @@
+/* Media and captions follow the text that introduces each workflow. */
+.case-page main.case-review .case-collage {
+  padding: 0;
+  background: transparent;
+}
+
+.case-page main.case-review :is(.case-figure, .case-video, .case-image-link, .source-image-viewport, img, video) {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.case-page main.case-review :is(.case-image-link, video):not(:focus-visible) {
+  outline: none;
+}
+
+.case-review .callgrid-screen {
+  outline: 1px solid #c4c4c4;
+  outline-offset: -1px;
+}
+
+/* The transparent ink scans sit on dotted paper, including when enlarged. */
+.case-page .notebook-paper {
+  --paper-step: 16px;
+  background-color: #fffdf6;
+  background-image: radial-gradient(circle, #aaa9a3 0.8px, transparent 1.15px);
+  background-size: var(--paper-step) var(--paper-step);
+}
+
+.case-page .notebook-paper img {
+  padding: var(--paper-step);
+}
+
+@media (min-width: 761px) {
+  .case-page .notebook-paper { --paper-step: 20px; }
+}
+
+.case-review .case-figure .collage-trim img {
+  position: absolute;
+  inset: var(--top) auto auto var(--left);
+  width: var(--full-width);
+  max-width: none;
+  height: auto;
+}
+
+@media (min-width: 761px) {
+  /* The board on the right matches the two screens, caption and gutter on the left. */
+  .case-review .callgrid-flow-collage {
+    --screen-slope: calc((1664 + 1670) / 2560);
+    --board-slope: calc(3998 / 1691);
+    --between-screens: calc(var(--review-gap) + var(--space-caption) + 1.25rem);
+    --screen-width: calc(((100% - var(--review-gap)) * var(--board-slope) - var(--between-screens)) / (var(--screen-slope) + var(--board-slope)));
+    grid-template-columns: minmax(0, var(--screen-width)) minmax(0, 1fr);
+  }
+}
+
+.case-review .callgrid-brand-phones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column: 1 / -1;
+  width: min(100%, 24rem);
+  gap: var(--review-gap);
+  justify-self: center;
+}
+
+.case-page main.case-review .callgrid-brand-phones > .source-figure {
+  margin: 0;
+}
+
+@media (min-width: 761px) {
+  .case-review .callgrid-brand-row {
+    grid-template-columns: minmax(0, 1.777778fr) minmax(0, 1.6fr);
+  }
+}
+
+@media (min-width: 1001px) {
+  .case-review .callgrid-brand-row {
+    grid-template-columns: minmax(0, 1.777778fr) minmax(0, 1.6fr) repeat(2, minmax(0, .461268fr));
+  }
+
+  .case-review .callgrid-brand-phones {
+    display: contents;
+  }
+}
+
+.case-review .case-figure .case-image-link,
+.case-review .case-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case-review .case-media-pair,
+.case-review .case-media-asymmetric {
+  display: grid;
+  align-items: start;
+  gap: var(--review-gap);
+  grid-template-columns: var(--collage-columns, repeat(2, minmax(0, 1fr)));
+}
+
+.case-review .case-media-asymmetric {
+  grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr);
+}
+
+.case-review .case-media-asymmetric > :first-child {
+  grid-row: span 2;
+}
+
+@media (min-width: 761px) {
+  .case-review .academy-course-collage {
+    grid-template-columns: minmax(0, 945fr) minmax(0, 448fr);
+    column-gap: var(--review-gap);
+    column-gap: round(nearest, 3.29%, 4px);
+    row-gap: 0;
+  }
+
+  .academy-course-collage > :last-child {
+    align-self: end;
+  }
+}
+
+.case-page main.case-review :is(.case-media-pair, .case-media-asymmetric) > .source-figure {
+  margin: 0;
+}
+
+.case-page main.case-review .case-video {
+  width: min(100%, 66rem);
+  margin: var(--space-block) auto;
+}
+
+.case-review .case-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.case-page main.case-review .case-video--portrait {
+  width: min(100%, 23rem, 36svh);
+}
+
+.crm-case .result-summary {
+  container-type: inline-size;
+}
+
+.case-review .case-workflow {
+  --flow-gap: 24px;
+  display: grid;
+  gap: var(--flow-gap);
+  width: min(100%, 18rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+}
+
+.case-review .case-workflow > li {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-block-size: 56px;
+  padding: 12px;
+  text-align: center;
+  outline: 1px solid #aeb6b3;
+  outline-offset: -1px;
+}
+
+.case-review .case-workflow > li:not(:last-child)::after {
+  content: "↓" / "";
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 50%;
+  translate: -50% 0;
+  display: grid;
+  place-items: center;
+  width: var(--flow-gap);
+  height: var(--flow-gap);
+  color: var(--case-muted);
+}
+
+@container (min-width: 40rem) {
+  .case-review .case-workflow {
+    --flow-gap: var(--review-gap);
+    width: 100%;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .case-review .case-workflow > li:not(:last-child)::after {
+    content: "→" / "";
+    inset-block-start: 50%;
+    inset-inline-start: 100%;
+    translate: 0 -50%;
+    height: 24px;
+  }
+}
+
+/* The opening and media plates use the full article grid. */
+.case-page main.case-review :is(.review-opening-copy, .report-opening) {
+  display: grid;
+  grid-template-columns: var(--case-tracks);
+  gap: var(--space-heading) var(--review-gap);
+}
+
+.case-page main.case-review :is(.review-opening-copy, .report-opening) > * {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.case-page main.case-review :is(.review-opening-copy, .report-opening) > .story-lead {
+  max-inline-size: none;
+}
+
+.case-page main.case-review :is(.story-section-heading, .review-overview-heading, .result-summary) {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.case-page main.case-review :is(.story-section-heading, .case-section-heading, .source-heading) :is(h2, h3) {
+  max-width: none;
+}
+
+.case-review.report-narrative h2 .story-section-number {
+  display: inline;
+  margin: 0;
+  color: inherit;
+}
+
+.case-page main.case-review .story-section-row--continuation > .story-section-heading:empty {
+  display: none;
+}
+
+.case-page main.case-review :is(.story-section-copy, .review-overview-copy) {
+  grid-column: 1 / -1;
+  min-inline-size: 0;
+}
+
+.case-page main.case-split :is(.story-section-copy, .review-overview-copy)
+  :is(.source-prose, .case-prose, p),
+.case-page main.case-split .story-list {
+  max-inline-size: none;
+}
+
+.case-page main.case-split :is(.story-section-copy, .review-overview-copy, .result-summary) p {
+  text-wrap: pretty;
+}
+
+.case-page main.case-split .review-overview-copy > p:first-child {
+  margin-block-start: 0;
+}
+
+.case-page main.case-split .story-section-copy > h3:first-child {
+  margin: 0 0 var(--space-caption);
+}
+
+.case-page main.case-split .story-section-copy > h3 + :where(:not(.story-list)) {
+  margin-block-start: 0;
+}
+
+.case-page main.case-split.report-narrative .story-section-copy:not(.overview-columns) {
+  display: block;
+}
+
+/* Keep the inner text rails on the same four-pixel grid as the article.
+   The last column takes the remainder after the earlier tracks are rounded. */
+@supports (width: round(down, 100%, 4px)) {
+  .case-split {
+    --text-pair: round(down, calc((100% - var(--review-gap)) / 2), 4px) minmax(0, 1fr);
+  }
+
+  @media (min-width: 1101px) {
+    .case-split .result-details { grid-template-columns: var(--text-pair); }
+  }
+}
+
+.case-page main.case-review .overview-columns {
+  display: grid;
+  grid-template-columns: var(--text-pair, repeat(2, minmax(0, 1fr)));
+  gap: var(--space-heading) var(--review-gap);
+}
+
+.case-page main.case-review .overview-columns > :is(.story-summary, .review-remaining-facts) {
+  grid-column: auto;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.case-page main.case-review .overview-columns .story-label {
+  margin-block: 0 var(--space-caption);
+  font-family: var(--body-font);
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.case-page main.case-review .overview-columns .story-label + .source-block {
+  margin-block-start: 0;
+}
+
+.case-page main.case-review .overview-columns p + .story-label {
+  margin-top: var(--space-heading);
+}
+
+.case-page main.case-review .case-video:not(.case-video--portrait) {
+  width: 100%;
+}
+
+@media (min-width: 761px) {
+  .case-split {
+    --copy-start: 4;
+  }
+
+  .case-page main.case-split :is(.story-section-row, .review-overview-row) {
+    grid-template-columns: var(--case-tracks);
+    align-items: start;
+  }
+
+  .case-page main.case-split :is(.story-section-heading, .review-overview-heading) {
+    grid-column: 1 / var(--copy-start);
+  }
+
+  .case-page main.case-split :is(.story-section-copy, .review-overview-copy, .result-summary) {
+    grid-column: var(--copy-start) / -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .case-page main.case-review .story-list:has(> li:nth-child(4)) {
+    display: grid;
+    width: round(down, 100%, 4px);
+    grid-template-columns: var(--text-pair, repeat(2, minmax(0, 1fr)));
+    gap: var(--space-list) var(--review-gap);
+  }
+}
+
+@media (min-width: 1440px) {
+  .case-split {
+    --copy-start: 3;
+  }
+
+  .case-page main.case-split :is(.story-section-copy, .review-overview-copy):not(.overview-columns)
+    p:not(.story-label, .source-note),
+  .case-page main.case-split .result-summary :is(p.result-lead, p.result-context, .result-note) {
+    line-height: var(--type-32);
+  }
+}
+
+@media (max-width: 1199px) {
+  .case-page main.case-split .overview-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .case-page main.case-split .story-section-copy .story-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .case-review .case-media-pair,
+  .case-review .case-media-asymmetric {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .case-review .case-media-asymmetric > :first-child {
+    grid-row: auto;
+  }
+
+}
+
+/* Equalise the call log and the two stacked detail screens, including the
+   caption and gutter between them. The slopes are the original height/width. */
+.case-review .call-log-collage {
+  --log-slope: calc(2048 / 2880);
+  --detail-slope: calc(2470 / 4096 + 1467 / 2352);
+  --middle-caption: 1.25rem;
+  --inner-gap: calc(var(--review-gap) + var(--space-caption) + var(--middle-caption));
+  --detail-width: calc(((100% - var(--review-gap)) * var(--log-slope) - var(--inner-gap)) / (var(--log-slope) + var(--detail-slope)));
+  --collage-columns: minmax(0, 1fr) minmax(0, var(--detail-width));
+}
+
+/* Reserve the second line of the caption in narrow two-column layouts. */
+@media (min-width: 761px) and (max-width: 70rem) {
+  .case-review .call-log-collage { --middle-caption: 2.5rem; }
+  .call-log-collage > .source-image-grid > :first-child > figcaption {
+    min-height: var(--middle-caption);
+  }
+}

@@ -1,0 +1,63 @@
+.report-narrative .report-panorama {
+  position: relative;
+  container-type: inline-size;
+  margin: 36px 0 0;
+}
+
+.report-panorama .case-image-link {
+  display: block;
+  position: relative;
+  aspect-ratio: 1200 / 562;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--case-soft);
+}
+
+.report-panorama .case-image-link:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
+
+.report-panorama figcaption {
+  position: absolute;
+  top: 8%;
+  left: 3.5%;
+  width: 30%;
+  margin: 0;
+  color: var(--ink);
+  font: 400 clamp(12px, 1.65cqi, 20px)/1.4 var(--body-font);
+  pointer-events: none;
+}
+
+.report-panorama figcaption strong {
+  display: block;
+  margin-bottom: clamp(4px, 1.2cqi, 16px);
+  font: 500 clamp(16px, 3.1cqi, 40px)/1.08 var(--display-font);
+}
+
+.report-panorama .report-screen {
+  display: block;
+  position: absolute;
+  max-width: none;
+  height: auto;
+  box-shadow: 0 0 0 1px rgb(37 39 42 / .1);
+}
+
+.report-screen-main { z-index: 2; top: 26%; left: 40%; width: 54%; }
+.report-screen-jobs { z-index: 1; top: 43%; left: 26%; width: 52%; }
+.report-screen-dispatch { top: 49%; left: 78%; width: 52%; }
+
+/* Enlarge the actual filter row from the front report. */
+.report-filter-detail {
+  position: absolute;
+  left: 46%;
+  top: 8%;
+  width: 44%;
+  aspect-ratio: 16 / 1;
+  background: url("assets/cases/reports-source/406-2611.png") 97.5% 11.9% / 181% auto no-repeat;
+}
+
+@media (max-width: 600px) {
+  .report-panorama figcaption { top: 6%; width: 32%; }
+  .report-screen-jobs { left: 34%; }
+}

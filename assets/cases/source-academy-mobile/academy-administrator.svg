@@ -1,0 +1,167 @@
+<svg width="1440" height="1344" viewBox="0 0 1440 1344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Administrator workflow &#226;&#128;&#148; portfolio">
+<g id="01  Content management" clip-path="url(#clip0_411_2625)">
+<text id="01 Content management" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="48" y="53.0909">01  Content management</tspan></text>
+</g>
+<g id="02  Reports &#38; insights" clip-path="url(#clip1_411_2625)">
+<text id="02 Reports &#38; insights" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="48" y="457.091">02  Reports &#38; insights</tspan></text>
+</g>
+<g id="03  Platform administration" clip-path="url(#clip2_411_2625)">
+<text id="03 Platform administration" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" font-weight="500" letter-spacing="0em"><tspan x="48" y="905.091">03  Platform administration</tspan></text>
+</g>
+<g id="admin.login / Log in">
+<rect x="48.5" y="98.5" width="179" height="63" rx="31.5" fill="white"/>
+<rect x="48.5" y="98.5" width="179" height="63" rx="31.5" stroke="#CDD1CB"/>
+<text id="Log in" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="111.94" y="124.545">Log in</tspan></text>
+<text id="Administrator" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="93.3887" y="149.591">Administrator</tspan></text>
+</g>
+<g id="admin.constructor / Constructor">
+<rect x="312.5" y="88.5" width="207" height="83" rx="7.5" fill="#EEEFEA"/>
+<rect x="312.5" y="88.5" width="207" height="83" rx="7.5" stroke="#929A96"/>
+<text id="Constructor" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="363.345" y="124.545">Constructor</tspan></text>
+<text id="Learning content" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="359.959" y="149.591">Learning content</tspan></text>
+</g>
+<g id="admin.create / Create product">
+<rect x="608.5" y="88.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="88.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Create product" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="655.04" y="136.545">Create product</tspan></text>
+</g>
+<g id="admin.edit / Edit course">
+<rect x="608.5" y="200.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="200.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Edit course" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="671.528" y="248.545">Edit course</tspan></text>
+</g>
+<g id="admin.delete / Delete product">
+<rect x="608.5" y="312.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="312.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Delete product" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="656.042" y="360.545">Delete product</tspan></text>
+</g>
+<g id="admin.onboarding / Onboarding">
+<rect x="1008.5" y="72.5" width="327" height="63" rx="7.5" fill="white"/>
+<rect x="1008.5" y="72.5" width="327" height="63" rx="7.5" stroke="#CDD1CB"/>
+<text id="Onboarding" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1121.44" y="110.545">Onboarding</tspan></text>
+</g>
+<g id="admin.course / Course">
+<rect x="1008.5" y="152.5" width="327" height="63" rx="7.5" fill="white"/>
+<rect x="1008.5" y="152.5" width="327" height="63" rx="7.5" stroke="#CDD1CB"/>
+<text id="Course" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1141.04" y="190.545">Course</tspan></text>
+</g>
+<path id="admin.login &#226;&#134;&#146; admin.constructor" d="M228 130H312M305 126L312 130L305 134" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.login &#226;&#134;&#146; admin.reports" d="M228 130H264V530H312M305 526L312 530L305 534" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.login &#226;&#134;&#146; admin.panel" d="M264 530V980H312M305 976L312 980L305 984" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.constructor &#226;&#134;&#146; admin.create" d="M520 130H608M601 126L608 130L601 134" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.constructor &#226;&#134;&#146; admin.edit" d="M520 130H552V242H608M601 238L608 242L601 246" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.constructor &#226;&#134;&#146; admin.delete" d="M552 242V354H608M601 350L608 354L601 358" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.create &#226;&#134;&#146; admin.onboarding" d="M832 130H904V104H1008M1001 100L1008 104L1001 108" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.create &#226;&#134;&#146; admin.course" d="M904 130V184H1008M1001 180L1008 184L1001 188" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="admin.reports / Reports">
+<rect x="312.5" y="488.5" width="207" height="83" rx="7.5" fill="#EEEFEA"/>
+<rect x="312.5" y="488.5" width="207" height="83" rx="7.5" stroke="#929A96"/>
+<text id="Reports" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="381.661" y="524.545">Reports</tspan></text>
+<text id="Learning &#38; performance" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="336.471" y="549.591">Learning &#38; performance</tspan></text>
+</g>
+<g id="admin.platform / Platform report">
+<rect x="608.5" y="488.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="488.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Platform report" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="654.557" y="536.545">Platform report</tspan></text>
+</g>
+<g id="admin.platform.result / Platform statistics">
+<rect x="1008.5" y="488.5" width="327" height="83" rx="7.5" fill="white"/>
+<rect x="1008.5" y="488.5" width="327" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Platform statistics" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1093.95" y="536.545">Platform statistics</tspan></text>
+</g>
+<path id="admin.reports &#226;&#134;&#146; admin.platform" d="M520 530H552M552 530V530ZM552 530H608M601 526L608 530L601 534" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.platform &#226;&#134;&#146; admin.platform.result" d="M832 530H1008M1001 526L1008 530L1001 534" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="admin.user / User report">
+<rect x="608.5" y="584.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="584.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="User report" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="670.79" y="632.545">User report</tspan></text>
+</g>
+<g id="admin.user.result / Detailed learner progress">
+<rect x="1008.5" y="584.5" width="327" height="83" rx="7.5" fill="white"/>
+<rect x="1008.5" y="584.5" width="327" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Detailed learner progress" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1063.35" y="632.545">Detailed learner progress</tspan></text>
+</g>
+<path id="admin.reports &#226;&#134;&#146; admin.user" d="M520 530H552V626H608M601 622L608 626L601 630" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.user &#226;&#134;&#146; admin.user.result" d="M832 626H1008M1001 622L1008 626L1001 630" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="admin.product / Product report">
+<rect x="608.5" y="680.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="680.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Product report" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="657.088" y="728.545">Product report</tspan></text>
+</g>
+<g id="admin.product.result / Course statistics">
+<rect x="1008.5" y="680.5" width="327" height="83" rx="7.5" fill="white"/>
+<rect x="1008.5" y="680.5" width="327" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Course statistics" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1099.43" y="728.545">Course statistics</tspan></text>
+</g>
+<path id="admin.reports &#226;&#134;&#146; admin.product" d="M520 530H552V722H608M601 718L608 722L601 726" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.product &#226;&#134;&#146; admin.product.result" d="M832 722H1008M1001 718L1008 722L1001 726" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="admin.feedback / Feedback report">
+<rect x="608.5" y="776.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="776.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Feedback report" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="649.002" y="824.545">Feedback report</tspan></text>
+</g>
+<g id="admin.feedback.result / Monitor feedback &#38; respond">
+<rect x="1008.5" y="776.5" width="327" height="83" rx="7.5" fill="white"/>
+<rect x="1008.5" y="776.5" width="327" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Monitor feedback &#38; respond" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1050.12" y="824.545">Monitor feedback &#38; respond</tspan></text>
+</g>
+<path id="admin.reports &#226;&#134;&#146; admin.feedback" d="M520 530H552V818H608M601 814L608 818L601 822" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.feedback &#226;&#134;&#146; admin.feedback.result" d="M832 818H1008M1001 814L1008 818L1001 822" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="admin.panel / Admin panel">
+<rect x="312.5" y="938.5" width="207" height="83" rx="7.5" fill="#EEEFEA"/>
+<rect x="312.5" y="938.5" width="207" height="83" rx="7.5" stroke="#929A96"/>
+<text id="Admin panel" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="600" letter-spacing="0em"><tspan x="361.868" y="974.545">Admin panel</tspan></text>
+<text id="Platform &#38; people" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="357.245" y="999.591">Platform &#38; people</tspan></text>
+</g>
+<g id="admin.settings / General settings">
+<rect x="608.5" y="938.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="938.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="General settings" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="649.354" y="986.545">General settings</tspan></text>
+</g>
+<g id="admin.users / Users">
+<rect x="608.5" y="1038.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="608.5" y="1038.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Users" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="694.978" y="1086.55">Users</tspan></text>
+</g>
+<g id="admin.manageusers / Manage users">
+<rect x="912.5" y="1038.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="912.5" y="1038.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Manage users" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="963.338" y="1074.55">Manage users</tspan></text>
+<text id="Add / edit / delete / block" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="940.014" y="1099.59">Add / edit / delete / block</tspan></text>
+</g>
+<g id="admin.groups / User groups">
+<rect x="912.5" y="1130.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="912.5" y="1130.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="User groups" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="971.433" y="1178.55">User groups</tspan></text>
+</g>
+<g id="admin.timer / Course timer">
+<rect x="912.5" y="1222.5" width="223" height="83" rx="7.5" fill="white"/>
+<rect x="912.5" y="1222.5" width="223" height="83" rx="7.5" stroke="#CDD1CB"/>
+<text id="Course timer" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="968.383" y="1270.55">Course timer</tspan></text>
+</g>
+<g id="admin.automation / Run automation">
+<rect x="1192.5" y="1222.5" width="199" height="83" rx="7.5" fill="white"/>
+<rect x="1192.5" y="1222.5" width="199" height="83" rx="7.5" stroke="#CDD1CB" stroke-dasharray="5 5"/>
+<text id="Run automation" fill="#25272A" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="1224.42" y="1258.55">Run automation</tspan></text>
+<text id="Configured rules" fill="#6B706E" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="1237.18" y="1283.59">Configured rules</tspan></text>
+</g>
+<path id="admin.panel &#226;&#134;&#146; admin.settings" d="M520 980H608M601 976L608 980L601 984" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.panel &#226;&#134;&#146; admin.users" d="M520 980H552V1080H608M601 1076L608 1080L601 1084" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.users &#226;&#134;&#146; admin.manageusers" d="M832 1080H912M905 1076L912 1080L905 1084" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.users &#226;&#134;&#146; admin.groups" d="M832 1080H872V1172H912M905 1168L912 1172L905 1176" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.users &#226;&#134;&#146; admin.timer" d="M872 1172V1264H912M905 1260L912 1264L905 1268" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="admin.timer &#226;&#134;&#146; admin.automation" d="M1136 1264H1192M1185 1260L1192 1264L1185 1268" stroke="#929A96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_411_2625">
+<rect width="500" height="20" fill="white" transform="translate(48 38)"/>
+</clipPath>
+<clipPath id="clip1_411_2625">
+<rect width="500" height="20" fill="white" transform="translate(48 442)"/>
+</clipPath>
+<clipPath id="clip2_411_2625">
+<rect width="500" height="20" fill="white" transform="translate(48 890)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,193 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="page-loading.js" async></script><title>Reports &amp; Analytics — Anastasia Afonina</title><meta name="description" content="How WeFix brought scattered metrics into one analytics section so managers could compare performance and open the jobs behind a figure."><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%236b7d7d'/%3E%3Ctext x='7' y='24' font-family='monospace' font-size='24' fill='%23faf9f5'%3Ea%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="cross-grid.css"><link rel="stylesheet" href="case-study.css"><link rel="stylesheet" href="case-editorial.css"><link rel="stylesheet" href="navigation.css"><link rel="stylesheet" href="footer-links.css"><link rel="stylesheet" href="link-hover-motion.css"><link rel="stylesheet" href="case-lightbox.css"><link rel="stylesheet" href="case-source.css"><link rel="stylesheet" href="case-story.css"><script src="case-lightbox.js" defer></script><link rel="stylesheet" href="case-review.css"><script src="case-review-nav.js" defer></script><script src="case-video-playback.js" defer></script><link rel="stylesheet" href="secondary-actions.css"><link rel="stylesheet" href="reports-narrative.css"><link rel="stylesheet" href="reports-cover.css"><link rel="stylesheet" href="typography.css"><link rel="stylesheet" href="case-spacing.css"><link rel="stylesheet" href="pixel-blocks.css"><script src="pixel-blocks.js" defer></script><link rel="stylesheet" href="case-reading.css"><link rel="stylesheet" href="selected-work501.css"><link rel="stylesheet" href="case-card-cover.css"><link rel="stylesheet" href="case-media-grid.css"><script defer src="case-media-grid.js"></script></head><body class="case-page reports-case case-reading"><a class="skip" href="#main">Skip to content</a><header class="case-review-header"><div class="shell case-review-header-inner"><a class="case-review-back secondary-action" href="index.html#selected-work" data-secondary-label="Back to work"><span class="secondary-label"><svg class="ui-stitch-icon ui-stitch-icon--compact" data-stitch-icon="arrow-left" viewBox="0 0 20 16" width="20" height="16" aria-hidden="true" focusable="false"><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(1.33225 1.49934)" fill="currentColor" style="--stitch-color:#E8B92E;--stitch-order:0"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(-3.00152 5.83312)" fill="currentColor" style="--stitch-color:#EB6B2F;--stitch-order:1"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(1.33225 5.83312)" fill="currentColor" style="--stitch-color:#EB6B2F;--stitch-order:2"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(5.66602 5.83312)" fill="currentColor" style="--stitch-color:#6A3B94;--stitch-order:3"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(9.99979 5.83312)" fill="currentColor" style="--stitch-color:#48AFC0;--stitch-order:4"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(1.33225 10.16689)" fill="currentColor" style="--stitch-color:#D94658;--stitch-order:0"/></svg><span>Back to work</span></span></a><nav class="case-review-links" aria-label="Case study sections"><a href="#overview" aria-current="location">Overview</a><a href="#challenge">Challenge</a><a href="#research">Research</a><a href="#design">Design decisions</a><a href="#validation">Validation</a><a href="#results">Results</a></nav></div></header>
+
+<main id="main" class="case-study shell case-editorial case-source case-story case-review case-split report-narrative" data-source-section="404:2476" tabindex="-1">
+<header id="overview" class="case-intro report-opening">
+  <h1>Reports &amp; Analytics</h1>
+  <p class="story-lead" data-source-node="404:2479">WeFix needed a way for managers to see how the business was doing and understand why performance changed.</p>
+</header>
+<figure class="case-feature-cover case-card-cover" data-hide-captions data-case-cover="reports">
+  <div class="case-cover-art">
+    <a class="case-image-link" href="assets/project-reports.png">
+      <img src="assets/project-reports.png" alt="WeFix performance dashboard and reporting interface" fetchpriority="high" decoding="async" width="3456" height="3526">
+    </a>
+  </div>
+</figure>
+<section class="story-chapter"><div class="story-section-row" data-source-node="404:2479">
+  <div class="story-section-heading"><h2>Overview</h2></div>
+  <div class="story-section-copy overview-columns"><div class="story-summary"><h3 class="story-label">Context</h3><p>As WeFix grew, its platform collected more data on customers, jobs, payments, employees and branches. Some metrics lived in the platform. Others were spread across Google Analytics, spreadsheets and separate reports.</p>
+</div><aside class="story-facts review-remaining-facts" data-source-node="404:2515"><h3 class="story-label">My role</h3><p>I studied how employees used data, developed hypotheses, chose visualisations and designed the interfaces. I worked with engineers to test the reports against real data.</p></aside></div>
+</div></section>
+
+<section id="challenge" class="story-chapter"><div class="story-section-row" data-source-node="404:2481">
+  <div class="story-section-heading"><h2><span class="story-section-number" aria-hidden="true">01.</span>&nbsp;The challenge</h2></div>
+  <div class="story-section-copy"><p>To prepare a report, managers had to gather and compare figures from several sources by hand. That left less time to analyse results, support their teams and resolve day-to-day problems.</p>
+<p>Employees could also interpret the same metric differently.</p></div>
+</div></section>
+<section id="research" class="story-chapter">
+<section class="report-step">
+<div class="story-section-row" data-source-node="404:2486">
+<div class="story-section-heading"><h2><span class="story-section-number" aria-hidden="true">02.</span>&nbsp;Research</h2></div>
+  <div class="story-section-copy">
+<h3>How employees used reports</h3>
+<p>I reviewed internal reports, Google Analytics charts and the other tools employees used. I then spoke with employees across roles about which reports they opened, which figures they collected by hand and what they compared.</p>
+<p>The interviews focused on five questions.</p>
+<ul class="story-list">
+  <li>What questions did they use data to answer?</li><li>Which figures did they need at a glance?</li>
+  <li>Which metrics did they explore in detail?</li><li>Which tasks took the most time?</li><li>What information was missing?</li>
+</ul>
+<p>I turned their answers into a list of business questions and reporting requirements for each role. The engineers then mapped the data available to answer them.</p></div>
+</div>
+<figure class="source-figure report-comparison case-collage" data-source-node="662:4264">
+<div class="report-comparison-art">
+<div class="report-comparison-before"><div data-source-node="404:2517">
+  <a class="case-image-link case-media-slot" style="--media-ratio:calc(1280 / 761)" href="assets/cases/reports/sales-by-account.png" aria-label="Open image: Original pie chart of sales by employee">
+    <span class="source-image-viewport" style="aspect-ratio:1280 / 761"><img src="assets/cases/reports/sales-by-account.png" width="1280" height="761" loading="lazy" decoding="async" alt="Original pie chart of sales by employee" style="clip-path:inset(0 0 0 calc(100% * 2 / 1280))"></span>
+  </a>
+</div><div data-source-node="404:2518">
+  <a class="case-image-link case-media-slot" style="--media-ratio:calc(1248 / 409)" href="assets/cases/reports/existing-reports.png" aria-label="Open image: Original dispatcher report with separate charts for sales and completed jobs">
+    <span class="source-image-viewport" style="aspect-ratio:1248 / 409"><span class="case-media-crop"><img src="assets/cases/reports/existing-reports.png" width="1280" height="416" loading="lazy" decoding="async" alt="Original dispatcher report with separate charts for sales and completed jobs" style="position:absolute;width:calc(100% * 1280 / 1248);height:calc(100% * 416 / 409);left:calc(-100% * 32 / 1248);top:calc(-100% * 7 / 409);clip-path:inset(calc(100% * 7 / 416) 0 0 2.5%)"></span></span>
+  </a>
+</div></div>
+<div class="report-comparison-after" data-source-node="581:11434">
+  <a class="case-image-link case-media-slot" style="--media-ratio:calc(439.297 / 312.426)" href="assets/cases/reports-source/406-2611.png" aria-label="Open image: Technician performance summary with job statuses, sales and a breakdown by employee">
+    <span class="source-image-viewport" style="aspect-ratio:439.297 / 312.426"><span class="case-media-crop"><img src="assets/cases/reports-source/406-2611.png" width="2880" height="3534" loading="lazy" decoding="async" alt="Technician performance summary with job statuses, sales and a breakdown by employee" style="width:100%;height:100%;object-fit:cover;object-position:top"></span></span>
+  </a>
+</div>
+</div>
+<figcaption>Technician performance reporting before and after</figcaption>
+</figure>
+</section>
+<section class="report-step">
+<div class="story-section-row" data-source-node="406:2592">
+  <div class="story-section-copy">
+<h3>Competitive analysis</h3>
+<p>I compared analytics products and data visualisation tools. I looked at how they organised dashboards, prioritised metrics, compared periods, handled filters, linked totals to individual records and showed trends or unusual values.</p>
+<p>I studied visualisation principles and chose formats for each question. I reviewed them with the front-end engineers early on to understand what their charting libraries supported and how much work each option would take. We kept the simpler option when extra detail added little insight.</p></div>
+</div>
+<div class="report-plates case-collage case-grid-row" data-source-node="582:11449" style="--row-ratio:calc(2611 / 1632 + 4096 / 2396);--first-share:calc(1.599877 / (1.599877 + 1.709516))">
+<figure class="source-figure" data-source-node="404:2519">
+  <a class="case-image-link case-media-slot" style="--media-ratio:calc(2603 / 1624)" href="assets/cases/reports/report-review.png" aria-label="Open image: Team reviewing a report layout on a video call">
+    <span class="source-image-viewport" style="aspect-ratio:2603 / 1624"><img src="assets/cases/reports/report-review.png" width="2611" height="1632" loading="lazy" decoding="async" alt="Team reviewing a report layout on a video call" style="object-view-box:inset(0.24510% 0.15320% 0.24510% 0.15320%)"></span>
+  </a><figcaption>Discussing a report layout with the team</figcaption>
+</figure>
+<figure class="source-figure" data-source-node="582:11445">
+  <a class="case-image-link case-media-slot" style="--media-ratio:calc(4096 / 2396)" href="assets/cases/reports/report-iterations.png" aria-label="Open image: Successive report layouts with the team’s design notes">
+    <span class="source-image-viewport" style="aspect-ratio:4096 / 2396"><img src="assets/cases/reports/report-iterations.png" width="4096" height="2396" loading="lazy" decoding="async" alt="Successive report layouts with the team’s design notes" style="clip-path:inset(calc(100% / 2396) calc(100% / 4096) 0 0)"></span>
+  </a><figcaption>Successive report layouts with the team’s feedback.</figcaption>
+</figure>
+</div>
+</section>
+<section class="report-step">
+<div class="story-section-row" data-source-node="406:2594">
+  <div class="story-section-copy">
+<h3>Four hypotheses</h3>
+<ul class="story-list">
+  <li>Bringing key metrics together on one dashboard would help managers assess the business more quickly.</li>
+  <li>Showing each figure alongside its trend and a point of comparison would make it easier to interpret.</li>
+  <li>Keeping detailed analysis in separate reports would make the dashboard easier to scan.</li>
+  <li>Giving each role access to the reports it needed would help employees find relevant data and protect sensitive information.</li>
+</ul>
+</div>
+</div>
+
+</section>
+<section class="report-step">
+<div class="story-section-row" data-source-node="404:2493">
+  <div class="story-section-copy">
+<h3>Ideas and constraints</h3>
+<p>For each business question, I proposed several ways to present the data. A trend could appear as a number, a line chart or a comparison between periods. A ranking, a table or a set of KPIs could show how employees were performing.</p>
+<p>The stakeholder, engineers and I weighed how easy each option was to understand, what data we had, how complex the calculations were and what we could build in the first release. We simplified or deferred ideas that depended on unreliable data or complex aggregation.</p></div>
+</div>
+<figure id="dispatcher-report-sketches" class="source-figure report-development case-collage" data-source-node="662:4265"><div class="report-development-art case-grid-row">
+<div data-source-node="404:2520">
+  <a class="case-image-link case-media-slot" style="--media-ratio:calc(2604 / 1459)" href="assets/cases/reports/table-review.png" aria-label="Open image: Team discussing an early table of dispatcher results">
+    <span class="source-image-viewport" style="aspect-ratio:2604 / 1459"><img src="assets/cases/reports/table-review.png" width="2616" height="1471" loading="lazy" decoding="async" alt="Team discussing an early table of dispatcher results" style="object-view-box:inset(0.54385% 0.15291% 0.27192% 0.30581%)"></span>
+  </a>
+</div>
+<div data-source-node="404:2524 582:11441">
+  <a class="case-image-link case-media-slot notebook-paper" style="--media-ratio:calc(1160 / 730)" href="assets/cases/reports/chart-sketches.png" aria-label="Open image: Two pages of handwritten chart ideas">
+    <span class="source-image-viewport" style="aspect-ratio:1160 / 730"><img src="assets/cases/reports/chart-sketches.png" width="1160" height="730" loading="lazy" decoding="async" alt="Two pages of handwritten chart ideas"></span>
+  </a>
+</div>
+</div><figcaption>Dispatcher report and job volume sketches</figcaption>
+</figure>
+</section>
+</section>
+<section id="design" class="story-chapter">
+<section class="report-step">
+<div class="story-section-row" data-source-node="404:2496">
+<div class="story-section-heading"><h2><span class="story-section-number" aria-hidden="true">03.</span>&nbsp;Design decisions</h2></div>
+  <div class="story-section-copy">
+<h3>Separate the overview from detailed analysis</h3>
+<p>We brought current figures and summaries together on one dashboard so managers could assess the business at a glance. Dedicated reports covered jobs, employees, service areas, communications and payments.</p>
+<p>We showed figures alongside trends and benchmarks. Managers could see how jobs were distributed over time and compare current performance with average values.</p></div>
+</div>
+<figure class="source-figure case-video" data-source-node="647:4257">
+  <video controls loop muted playsinline preload="none" width="1076" height="764" poster="assets/cases/reports/dashboard-tabs.webp" aria-label="Switching between Areas, Commissions and Payments, then filtering transactions by payment type." style="--media-ratio:calc(1076 / 764)">
+    <source src="assets/cases/reports/dashboard-tabs.mp4" type="video/mp4">
+    <a href="assets/cases/reports/dashboard-tabs.mp4">Watch the video</a>
+  </video>
+  <figcaption>Dashboard tabs and payment filters</figcaption>
+</figure>
+</section>
+<section class="report-step">
+<div class="story-section-row" data-source-node="404:2499">
+  <div class="story-section-copy">
+<h3>Keep the filters when opening individual jobs</h3>
+<p>Once managers spotted a change, they needed to investigate its cause. I designed filters for service area, date range and job status.</p>
+<p>From a report, users could open Jobs with the same filters already applied. That took them straight from a summary figure to the records behind it and the actions they could take.</p></div>
+</div>
+<figure class="source-figure case-video" data-source-node="646:4252">
+  <video controls loop muted playsinline preload="none" width="1076" height="764" poster="assets/cases/reports/job-statistics.webp" aria-label="Switching between views in the Job Statistics report." style="--media-ratio:calc(1076 / 764)">
+    <source src="assets/cases/reports/job-statistics.mp4" type="video/mp4">
+    <a href="assets/cases/reports/job-statistics.mp4">Watch the video</a>
+  </video>
+  <figcaption>Job Statistics views</figcaption>
+</figure>
+</section>
+<section class="report-step">
+<div class="story-section-row" data-source-node="404:2502">
+  <div class="story-section-copy">
+<h3>Tailor report access to each role</h3>
+<p>Employees in different roles needed different reports. We gave dispatchers access to the sections they used in their work. The navigation showed the available reports up front, so dispatchers could see where they could go before choosing a section.</p></div>
+</div>
+<figure class="source-figure case-video" data-source-node="645:4251">
+  <video controls loop muted playsinline preload="none" width="1366" height="1080" poster="assets/cases/reports/report-overview.webp" aria-label="An overview of the WeFix reports." style="--media-ratio:calc(1366 / 1080)">
+    <source src="assets/cases/reports/report-overview.mp4" type="video/mp4">
+    <a href="assets/cases/reports/report-overview.mp4">Watch the video</a>
+  </video>
+  <figcaption>WeFix reporting overview</figcaption>
+</figure>
+</section>
+</section>
+<section id="validation" class="story-chapter"><div class="story-section-row" data-source-node="404:2505">
+  <div class="story-section-heading"><h2><span class="story-section-number" aria-hidden="true">04.</span>&nbsp;Testing with real data</h2></div>
+  <div class="story-section-copy"><p>Charts could behave differently once they contained real data. I worked with engineers in a test environment to check the calculations, filters and date ranges. We tried different values, checked empty states and followed the path from a summary figure to its underlying records.</p>
+<p>We used what we learned to refine the charts, the underlying data structure and the choice of metrics.</p></div>
+</div>
+<div class="report-plates">
+<figure class="source-figure" data-source-node="404:2521">
+  <a class="case-image-link case-media-slot" style="--media-ratio:calc(2599 / 1457)" href="assets/cases/reports/validation-review.png" aria-label="Open image: Team testing the reported job statistics">
+    <span class="source-image-viewport" style="aspect-ratio:2599 / 1457"><img src="assets/cases/reports/validation-review.png" width="2611" height="1465" loading="lazy" decoding="async" alt="Team testing the reported job statistics" style="object-view-box:inset(0.27304% 0.15320% 0.27304% 0.30640%)"></span>
+  </a><figcaption>Checking the Job Statistics chart with real data</figcaption>
+</figure>
+</div></section>
+<section id="results" class="story-chapter story-results">
+  <div class="story-section-row">
+    <div class="story-section-heading"><h2>Results</h2></div>
+    <div class="result-summary">
+      <div data-source-node="404:2511"><p class="result-lead">Managers could assess performance more quickly. In one place, they could compare branches and employees, track KPIs and open the records behind a figure.</p></div>
+      <figure class="result-evidence">
+        <dl class="result-metrics">
+          <div>
+            <dt>Average sales volume</dt>
+            <dd class="result-value" data-source-node="404:2514">+30%</dd>
+          </div>
+        </dl>
+        <p class="result-context" data-source-node="404:2513">Clearer processes, closer KPI tracking and improved reporting contributed to the increase.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+<nav class="case-end review-project-nav" aria-label="More projects"><a class="review-nav-card review-all-link" href="index.html#selected-work" aria-label="Back to all projects"><span class="review-nav-arrow" aria-hidden="true"><svg class="ui-stitch-icon" data-stitch-icon="arrow-left" viewBox="0 0 32 24" width="32" height="24" aria-hidden="true" focusable="false"><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(5.16536 1.16557)" fill="currentColor" style="--stitch-color:#E8B92E;--stitch-order:0"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(0.83159 5.49934)" fill="currentColor" style="--stitch-color:#E8B92E;--stitch-order:1"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(-3.50218 9.83311)" fill="currentColor" style="--stitch-color:#EB6B2F;--stitch-order:2"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(0.83159 9.83311)" fill="currentColor" style="--stitch-color:#EB6B2F;--stitch-order:3"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(5.16536 9.83311)" fill="currentColor" style="--stitch-color:#D94658;--stitch-order:4"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(9.49913 9.83311)" fill="currentColor" style="--stitch-color:#6A3B94;--stitch-order:0"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(13.83291 9.83311)" fill="currentColor" style="--stitch-color:#6A3B94;--stitch-order:1"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(18.16668 9.83311)" fill="currentColor" style="--stitch-color:#48AFC0;--stitch-order:2"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(22.50044 9.83311)" fill="currentColor" style="--stitch-color:#48AFC0;--stitch-order:3"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(0.83159 14.16688)" fill="currentColor" style="--stitch-color:#D94658;--stitch-order:4"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(5.16536 18.50066)" fill="currentColor" style="--stitch-color:#6A3B94;--stitch-order:0"/></svg></span><span class="review-nav-copy"><span class="review-nav-caption">Back to</span><span class="review-nav-title">All Projects</span></span></a><a class="review-nav-card review-next-link" href="communication-crm.html" aria-label="Next project: Communication &amp; CRM"><span class="review-nav-copy"><span class="review-nav-caption">Next project</span><span class="review-nav-title">Communication &amp; <span class="review-nav-ending">CRM<span class="review-nav-arrow" aria-hidden="true"><svg class="ui-stitch-icon" data-stitch-icon="arrow-right" viewBox="0 0 32 24" width="32" height="24" aria-hidden="true" focusable="false"><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(13.83291 1.16557)" fill="currentColor" style="--stitch-color:#E8B92E;--stitch-order:0"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(18.16668 5.49934)" fill="currentColor" style="--stitch-color:#E8B92E;--stitch-order:1"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(22.50044 9.83311)" fill="currentColor" style="--stitch-color:#EB6B2F;--stitch-order:2"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(18.16668 9.83311)" fill="currentColor" style="--stitch-color:#EB6B2F;--stitch-order:3"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(13.83291 9.83311)" fill="currentColor" style="--stitch-color:#D94658;--stitch-order:4"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(9.49913 9.83311)" fill="currentColor" style="--stitch-color:#6A3B94;--stitch-order:0"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(5.16536 9.83311)" fill="currentColor" style="--stitch-color:#6A3B94;--stitch-order:1"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(0.83159 9.83311)" fill="currentColor" style="--stitch-color:#48AFC0;--stitch-order:2"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(-3.50218 9.83311)" fill="currentColor" style="--stitch-color:#48AFC0;--stitch-order:3"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(18.16668 14.16688)" fill="currentColor" style="--stitch-color:#D94658;--stitch-order:4"/><path d="M8.66775 0H7.64206L6.50087 1.15565L5.35963 0H4.33398V1.0256L5.48964 2.16688L4.33398 3.32254V4.33377H5.35963L6.50087 3.19249L7.64206 4.33377H8.66775V3.32254L7.52651 2.16688L8.66775 1.0256V0Z" transform="translate(13.83291 18.50066)" fill="currentColor" style="--stitch-color:#6A3B94;--stitch-order:0"/></svg></span></span></span></span></a></nav></main>
+<footer class="site-footer shell"><div class="copyright"><span>©</span><img src="assets/home-footer-1.svg" alt="2026"><span>by Anastasia Afonina</span></div><a class="email footer-link" href="mailto:a@afonina.uk"><span class="footer-link-label">a@afonina.uk</span><span class="footer-link-decoration" aria-hidden="true"><img class="footer-link-underline" src="assets/menu-refresh/footer-email-line.svg" width="103.714" height="4.38455" alt="" aria-hidden="true"><img class="footer-link-spark" src="assets/menu-refresh/footer-email-spark.svg" width="25.9267" height="17.3299" alt="" aria-hidden="true"></span></a><a class="linkedin footer-link" href="https://www.linkedin.com/in/a-afonina" target="_blank" rel="noopener noreferrer"><span class="footer-link-label">LinkedIn</span><span class="footer-link-decoration" aria-hidden="true"><img class="footer-link-underline" src="assets/menu-refresh/footer-linkedin-line.svg" width="64.8349" height="4.38064" alt="" aria-hidden="true"><img class="footer-link-spark" src="assets/menu-refresh/footer-linkedin-spark.svg" width="12.9658" height="12.9978" alt="" aria-hidden="true"></span></a><a class="back-top" href="#main" aria-label="Back to top"><img src="assets/footer-goat.svg" width="72" height="72" alt=""></a></footer><script src="footer-goat-turn-frames.js" defer></script><script src="footer-goat-turn.js" defer></script></body></html>

@@ -1,0 +1,86 @@
+/* Editorial case layouts: existing ink and page colour, with white text panels. */
+.case-story{--story-surface:#fff}
+.case-story .case-intro{max-width:none;margin-bottom:64px}
+.case-story .case-back{margin-bottom:48px}
+.case-story .case-intro h1{max-width:1000px}
+.case-story .story-lead{max-width:880px;font:400 28px/40px var(--body-font);margin:28px 0 0;text-wrap:pretty}
+.case-story .story-label{display:block;font:500 12px/20px var(--body-font);letter-spacing:1.2px;text-transform:uppercase;color:var(--case-muted);margin:0 0 16px}
+.case-story :is(.story-chapter,.source-heading.story-chapter){margin-top:96px;padding-top:0;border:0;scroll-margin-top:32px}
+.case-story .case-intro+.story-chapter{margin-top:64px}
+.case-story :is(.case-section-heading,.source-heading){max-width:none;margin:0 0 32px}
+.case-story :is(.case-section-heading,.source-heading) h2{max-width:960px;text-wrap:balance}
+.case-story :is(.source-prose,.case-prose){max-width:800px;text-wrap:pretty}
+.case-story .story-overview{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:start}
+.case-story .story-overview :is(.source-prose,.case-prose){max-width:none}
+.case-story .story-summary{min-width:0;font-size:18px;line-height:32px}
+.case-story .story-summary p{margin:0 0 24px}
+.case-story .story-summary p:last-child{margin-bottom:0}
+.case-story .story-summary>h2:not(.story-label){font:500 32px/40px var(--display-font);margin:0 0 24px;text-wrap:balance}
+.case-story .story-summary>.source-block{margin-top:20px}
+.case-story .story-overview+:is(.source-image-grid,.source-figure){margin-top:48px}
+.case-story .story-facts{min-width:0;background:var(--story-surface);padding:32px;border-radius:0}
+.case-story .story-overview>.story-facts{margin:0}
+.case-story .story-facts :is(p,li,.source-prose){font-size:16px;line-height:28px}
+.case-story .story-facts p{margin:0 0 24px}
+.case-story .story-facts p:last-child{margin-bottom:0}
+.case-story .story-facts :is(h3,h4){font:500 16px/24px var(--body-font);margin:0 0 16px}
+.case-story .story-facts .story-label{font:500 12px/20px var(--body-font);letter-spacing:1.2px}
+.case-story .story-facts :is(h3,h4):not(:first-child){margin-top:32px;padding-top:0}
+.case-story .story-step{margin-top:64px;min-width:0}
+.case-story .story-step:first-child{margin-top:0}
+.case-story .story-step .story-step-heading{font:500 28px/36px var(--body-font);margin:0 0 24px;max-width:880px;text-wrap:balance}
+.case-story .story-step+.story-step{padding-top:0;margin-top:80px}
+.case-story .story-section-row{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:48px;align-items:start;min-width:0}
+.case-story .story-section-heading{display:flex;align-items:baseline;gap:12px;min-width:0;margin:0}
+.case-story .story-section-heading h3{font:600 20px/28px var(--body-font);letter-spacing:0;margin:0;max-width:none;text-wrap:pretty;scroll-margin-top:32px}
+.case-story .story-section-copy{min-width:0;font:400 18px/32px var(--body-font)}
+.case-story .story-section-copy :is(.source-prose,.case-prose){max-width:none}
+.case-story .story-section-copy>:first-child{margin-top:0}
+.case-story .story-section-copy>:last-child{margin-bottom:0}
+.case-story .story-section-row+:is(.source-block,.source-figure,.source-image-grid){margin-top:40px}
+.case-story .story-section-row--continuation{margin-top:40px}
+.case-story :is(.source-prose,.case-prose)>.story-list,.case-story .story-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px;list-style:none;padding:0;margin:32px 0;max-width:960px}
+.case-story .story-list>li{margin:0;padding:0;font-size:18px;line-height:28px}
+.case-story .story-section-copy .story-list{grid-template-columns:1fr;gap:16px}
+.case-story .story-section-copy .story-list>li{position:relative;padding-left:24px}
+.case-story .story-section-copy .story-list>li::before{content:"";position:absolute;top:10px;left:0;width:var(--cross-size);height:var(--cross-size)}
+.case-story .story-list>li::marker{content:""}
+.case-story .source-prose .story-list>li+li{margin-top:0}
+.case-story .story-results .source-metric-number{font:500 56px/64px var(--display-font);margin:24px 0 0}
+.case-story .story-results .source-metrics{gap:24px}
+.case-story .story-results .source-metrics>div{padding:32px;background:var(--story-surface)}
+.case-story .story-results .source-metrics dt{font-size:48px;line-height:56px;margin-bottom:20px}
+.case-story .story-results .source-metrics dd{font-size:16px;line-height:28px}
+.case-story .story-results .source-prose{max-width:800px}
+.case-story :is(.source-figure,.source-image-grid){background:transparent;border:0;box-shadow:none}
+.case-story .case-end{border:0;padding-top:0;margin-top:96px}
+@media(max-width:1000px){
+ .case-story .story-overview{gap:32px;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+ .case-story .story-section-row{gap:32px}
+ .case-story .story-results .source-metrics>div{padding:24px}
+}
+@media(max-width:760px){
+ .case-story .story-overview{grid-template-columns:1fr;gap:32px}
+ .case-story .story-section-row{grid-template-columns:1fr;gap:24px}
+ .case-story .story-section-row--continuation>.story-section-heading{display:none}
+ .case-story .story-lead{font-size:24px;line-height:36px}
+ .case-story :is(.story-chapter,.source-heading.story-chapter){margin-top:72px}
+ .case-story .story-step{margin-top:48px}
+ .case-story .story-step+.story-step{margin-top:64px}
+ .case-story .story-results .source-metrics{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ .case-story .case-back{margin-bottom:32px}
+ .case-story .case-intro{margin-bottom:48px}
+ .case-story .story-lead{font-size:20px;line-height:32px;margin-top:24px}
+ .case-story :is(.story-chapter,.source-heading.story-chapter){margin-top:64px;padding-top:0}
+ .case-story .case-intro+.story-chapter{margin-top:48px}
+ .case-story .story-facts{padding:24px}
+ .case-story .story-summary{font-size:16px;line-height:28px}
+ .case-story .story-summary>h2:not(.story-label){font-size:28px;line-height:36px}
+ .case-story .story-section-copy{font-size:16px;line-height:28px}
+ .case-story .story-section-row+:is(.source-block,.source-figure,.source-image-grid),.case-story .story-section-row--continuation{margin-top:32px}
+ .case-story :is(.source-prose,.case-prose)>.story-list,.case-story .story-list{grid-template-columns:1fr;gap:16px;margin:24px 0}
+ .case-story .story-list>li{font-size:16px;line-height:28px}
+ .case-story .case-end{margin-top:64px;padding-top:0}
+}

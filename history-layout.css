@@ -1,0 +1,126 @@
+/* History — Figma 308:1059. Shared navigation and footer interactions remain. */
+.history-page {
+  --history-width:min(1400px,80%);
+  --history-row-size:var(--type-20);
+  --history-row-leading:1.2;
+}
+body.history-page .shell,
+body.history-page .site-header {
+  width:var(--history-width);
+}
+body.history-page .site-header {
+  height:80px;
+}
+.history-page .history-content {
+  container-type:inline-size;
+  margin-top:120px;
+  padding-bottom:0;
+}
+.history-drawing-grid {
+  position:absolute;
+  inset:0 auto auto 0;
+  font-size:var(--goat-stitch);
+  pointer-events:none;
+}
+.history-page .history-table {
+  display:block;
+  width:100%;
+}
+.history-page .history-table :is(thead,tbody) { display:block; }
+.history-page .history-table thead { margin-bottom:12px; }
+.history-page .history-table tbody { display:grid; gap:12px; }
+.history-page .history-table tr {
+  display:grid;
+  grid-template-columns:minmax(0,11fr) minmax(0,18fr) minmax(0,19fr);
+  margin:0;
+  padding:0;
+  background:none;
+}
+.history-page .history-table th {
+  width:auto;
+  padding:0 32px;
+  background:transparent;
+  font-size:var(--type-20);
+  font-weight:600;
+  line-height:1.2;
+}
+.history-page .history-table td {
+  display:flex;
+  align-items:center;
+  min-width:0;
+  width:auto;
+  min-height:128px;
+  padding:40px 24px 40px 32px;
+  background:#fff;
+  font-size:var(--history-row-size);
+  font-weight:400;
+  line-height:var(--history-row-leading);
+}
+.history-page .history-table td:first-child {
+  justify-content:flex-start;
+  width:auto;
+  padding-inline-end:8px;
+  font-family:Tektur,monospace;
+  font-size:var(--type-28);
+  font-weight:400;
+  line-height:1.285714;
+  white-space:nowrap;
+}
+.history-page .history-table td:nth-child(2) { padding-inline-end:0; }
+.history-page .history-project-link { font-weight:500; text-wrap:pretty; }
+.history-page .site-footer {
+  min-height:80px;
+  margin-top:120px;
+  margin-bottom:8px;
+}
+.history-page .site-footer .back-top { margin-left:108px; }
+@media(max-width:1000px) {
+  .history-page {
+    --history-width:calc(100% - 48px);
+    --history-row-leading:1.4;
+  }
+  .history-page .history-content,
+  .history-page .site-footer { margin-top:80px; }
+  .history-page .site-footer .back-top { margin-left:0; }
+  .history-page .history-table tr {
+    grid-template-columns:80px minmax(0,36%) minmax(0,1fr);
+  }
+  .history-page .history-table th { padding-inline:16px; font-size:var(--type-16); }
+  .history-page .history-table td { min-height:112px; padding:24px 16px; }
+  .history-page .history-table td:first-child {
+    padding-inline:16px 8px;
+    font-size:var(--type-20);
+    line-height:1.4;
+  }
+}
+@media(max-width:650px) {
+  .history-page {
+    --history-width:calc(100% - 40px);
+    --history-row-size:var(--type-body);
+    --history-row-leading:var(--type-body-leading);
+  }
+  body.history-page .site-header { height:68px; }
+  .history-page .history-content { margin-top:40px; }
+  .history-page .history-table thead { display:none; }
+  .history-page .history-table tbody { gap:12px; }
+  .history-page .history-table tr {
+    grid-template-columns:1fr;
+    gap:8px;
+    padding:16px;
+    background:#fff;
+  }
+  .history-page .history-table td {
+    display:block;
+    min-height:0;
+    padding:0!important;
+    background:transparent!important;
+    margin:0;
+  }
+  .history-page .history-table td:first-child { color:inherit; }
+  .history-page .history-table td:nth-child(2) {
+    font-size:var(--type-20);
+    font-weight:500;
+    line-height:1.4;
+  }
+  .history-page .site-footer { margin-top:56px; }
+}

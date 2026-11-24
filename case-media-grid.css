@@ -1,0 +1,130 @@
+/* Keep the image geometry authored in Figma inside a four-pixel display frame.
+   Measure against the available grid track, including narrower collage cells. */
+@supports (width: round(down, 100%, 4px)) and (width: 1cqw) {
+  .case-page main.case-review :has(> .case-media-slot),
+  .case-page main.case-review .academy-course-collage > .case-media-slot,
+  .case-page main.case-review figure.case-video {
+    container-type: inline-size;
+  }
+
+  .case-page main.case-review .case-media-slot {
+    display: block;
+    width: round(down, 100%, 4px);
+  }
+
+  .case-page main.case-review .case-media-slot > :is(img, .source-image-viewport),
+  .case-page main.case-review .case-video > video {
+    --media-height: var(--aligned-media-height, max(4px, round(nearest, calc(100cqw / var(--media-ratio) + 0.04px), 4px)));
+    display: block;
+    width: 100%;
+    height: var(--media-height);
+    object-fit: contain;
+  }
+
+  .case-page main.case-review .case-media-slot > .source-image-viewport {
+    display: grid;
+    place-items: center;
+  }
+
+  .case-page main.case-review .case-media-slot > .source-image-viewport > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Size the original clipping window proportionally inside the snapped frame.
+     Its children keep their authored zoom, offsets and object positions. */
+  .case-page main.case-review .case-media-crop {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: min(100%, calc(var(--media-height) * var(--media-ratio)));
+    aspect-ratio: var(--media-ratio);
+  }
+
+  .case-page main.case-review .case-video:not(.case-video--portrait) {
+    width: round(down, 100%, 4px);
+  }
+
+  .case-page main.case-review .case-video--portrait {
+    width: min(round(down, 100%, 4px), round(nearest, min(23rem, 36svh), 4px));
+  }
+}
+
+/* With legacy sizing the original viewport remains the clipping window. */
+@supports not ((width: round(down, 100%, 4px)) and (width: 1cqw)) {
+  .case-media-crop { display: contents; }
+}
+
+/* Snap the track boundaries as well as the art inside each track. The final
+   column takes the remainder, so the authored gutter stays exactly the same. */
+@supports (width: round(nearest, 100%, 4px)) and (width: 1cqw) {
+  .case-page main.case-review .callgrid-brand-phones {
+    grid-template-columns: repeat(2, round(down, calc((100% - var(--review-gap)) / 2), 4px));
+  }
+
+  @media (min-width: 761px) {
+    .case-page main.case-review .case-grid-row,
+    .case-page main.case-review .callgrid-brand-row {
+      container-type: inline-size;
+      --gutter-total: var(--review-gap);
+      --media-space: calc(100% - var(--gutter-total));
+      --first-track: round(nearest, calc(var(--media-space) * var(--first-share, 0.5)), 4px);
+      --media-tracks: var(--first-track) minmax(0, 1fr);
+      grid-template-columns: var(--media-tracks);
+    }
+
+    .case-page main.case-review .case-grid-three {
+      --gutter-total: calc(2 * var(--review-gap));
+      --first-share: calc(1 / 3);
+      --second-edge: round(nearest, calc(var(--media-space) * 2 / 3), 4px);
+      --media-tracks: var(--first-track) calc(var(--second-edge) - var(--first-track)) minmax(0, 1fr);
+    }
+
+    /* Pairs of differently shaped screens are designed to share a height.
+       Compute it from the whole row so neither screen stretches after rounding. */
+    .case-page main.case-review :is(.case-grid-row, .callgrid-brand-row) > figure,
+    .case-page main.case-review .report-development-art > div {
+      container-type: normal;
+      --aligned-media-height: round(nearest, calc((100cqw - var(--gutter-total)) / var(--row-ratio)), 4px);
+    }
+
+    .case-page main.case-review .call-log-collage {
+      grid-template-columns: minmax(0, 1fr) round(nearest, var(--detail-width), 4px);
+    }
+
+    .case-page main.case-review .callgrid-flow-collage {
+      grid-template-columns: round(nearest, var(--screen-width), 4px) minmax(0, 1fr);
+    }
+
+    .case-page main.case-review .report-comparison-art {
+      grid-template-columns: round(nearest, var(--before-width), 4px) minmax(0, 1fr);
+    }
+
+    .case-page main.case-review .academy-course-collage {
+      --course-gap: round(nearest, 3.29%, 4px);
+      column-gap: var(--course-gap);
+      grid-template-columns: round(nearest, calc((100% - var(--course-gap)) * 945 / 1393), 4px) minmax(0, 1fr);
+    }
+
+    .case-page main.case-review .callgrid-brand-row {
+      --row-ratio: calc(3840 / 2160 + 1440 / 900);
+      --first-share: calc(3840 / 2160 / var(--row-ratio));
+    }
+  }
+
+  @media (min-width: 1001px) {
+    .case-page main.case-review .callgrid-brand-row {
+      --row-ratio: calc(3840 / 2160 + 1440 / 900 + 2 * 393 / 852);
+      --gutter-total: calc(3 * var(--review-gap));
+      --phone-track: round(nearest, calc(var(--media-space) * 393 / 852 / var(--row-ratio)), 4px);
+      --media-tracks: var(--first-track) minmax(0, 1fr) repeat(2, var(--phone-track));
+    }
+
+    .case-page main.case-review .callgrid-brand-phones > figure {
+      container-type: normal;
+      --aligned-media-height: round(nearest, calc((100cqw - var(--gutter-total)) / var(--row-ratio)), 4px);
+    }
+  }
+}

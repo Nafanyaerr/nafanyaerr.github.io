@@ -1,0 +1,15 @@
+/* Reserve the entire dance (51 stitch columns) while keeping the resting
+   figure on its original 32 × 45 grid, at most 8.25px per stitch. */
+.hero-content{grid-template-columns:minmax(0,560px) min(43%,420.75px);max-width:1012px}
+.hero .hero-art{position:relative;width:100%;height:auto;aspect-ratio:51/45}
+.hero-goat{position:absolute;left:calc(100% * 10 / 51);top:0;width:calc(100% * 32 / 51);height:100%;display:block;appearance:none;border:0;border-radius:0;background:transparent;padding:0;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.hero-goat:focus-visible{outline:2px solid var(--focus);outline-offset:4px}
+.hero-art .hero-goat-still,.hero-goat-motion{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+/* A hidden layer must not paint any descendant, including SVG stitches
+   that declare their own visibility. */
+.hero-goat .hero-goat-motion{display:none}
+.hero-goat[data-playing] .hero-goat-motion{display:block}
+.hero-goat[data-playing] .hero-goat-still{display:none}
+/* Once moving, the entire swept area remains part of the hover target. */
+.hero-goat[data-playing]::after{content:"";position:absolute;inset:0 -28.125% 0 -31.25%}
+@media(max-width:700px){.hero .hero-art{width:min(100%,420.75px)}}

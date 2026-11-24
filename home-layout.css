@@ -1,0 +1,22 @@
+/* Homepage introduction positions from Desktop - 14, Figma 501:4009.
+   Keep the approved goat player and its complete dance envelope intact. */
+.home-frame501 { --home-unit:min(calc(100vw / 1440),calc(1400px / 1152)); }
+.home-frame501 main :is(.hero,.figma-work) { width:min(100%,80vw,1400px);margin-inline:auto; }
+.home-frame501 main .hero { min-height:calc(653.172 * var(--home-unit));padding:calc(81.309 * var(--home-unit)) 0 0; }
+.home-frame501 .hero .hero-content { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(32 * var(--home-unit));align-items:start; }
+.home-frame501 .hero .hero-content h1 { max-width:560.461px;margin:calc(142.023 * var(--home-unit)) 0 0;font-size:28px;line-height:43px;text-wrap:wrap; }
+.home-frame501 .hero .hero-content .hero-art { width:min(420.75px,calc(420.75 * var(--home-unit)));justify-self:end;align-self:start; }
+@media(min-width:701px) and (max-width:1000px) {
+  .home-frame501 main :is(.hero,.figma-work){width:100%}
+  .home-frame501 main .hero { min-height:0;padding:64px 0 112px; }
+  .home-frame501 .hero .hero-content { grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:center; }
+  .home-frame501 .hero .hero-content h1 { margin:0;font-size:24px;line-height:36px; }
+  .home-frame501 .hero .hero-content .hero-art { width:100%;align-self:center; }
+}
+@media(max-width:700px) {
+  .home-frame501 main :is(.hero,.figma-work){width:100%}
+  .home-frame501 main .hero { min-height:0;padding:40px 0 64px; }
+  .home-frame501 .hero .hero-content { display:flex;flex-direction:column;align-items:flex-start;gap:32px; }
+  .home-frame501 .hero .hero-content h1 { width:100%;margin:0;font-size:22px;line-height:34px; }
+  .home-frame501 .hero .hero-content .hero-art { width:min(100%,420.75px);align-self:center; }
+}

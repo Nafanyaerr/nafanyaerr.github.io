@@ -1,0 +1,146 @@
+/* The article uses the site's eight tracks. Headings introduce the content below them. */
+.report-narrative .report-opening {
+  margin: 0;
+  max-width: none;
+}
+.report-narrative .report-opening .story-lead {
+  margin: 32px 0 0;
+}
+.report-narrative .report-brief,
+.report-narrative .story-section-row,
+.report-issues,
+.report-plates {
+  display: grid;
+  grid-template-columns: var(--case-tracks);
+  align-items: start;
+  gap: 24px var(--review-gap);
+}
+.report-brief { margin-top: var(--chapter-gap); }
+.report-brief > h2,
+.report-narrative .story-section-heading,
+.report-narrative .story-section-copy,
+.report-narrative .story-section-row > .result-summary,
+.report-narrative .story-section-row > .report-issues {
+  grid-column: 1/-1;
+}
+.report-brief > div {
+  grid-column: span 4;
+  min-width: 0;
+}
+.report-brief :is(h3, p), .report-issues :is(h3, p) { margin: 0; }
+.report-brief p, .report-issues p {
+  font: 400 18px/28px var(--body-font);
+  text-wrap: pretty;
+}
+.report-brief .report-brief-copy, .report-brief h3 + p, .report-issues h3 + p { margin-top: 12px; }
+.report-brief p + p { margin-top: 16px; }
+.report-issues { row-gap: 24px; }
+.report-issues > div { grid-column: span 2; min-width: 0; }
+
+.report-chapter-heading { margin: 0 0 32px; }
+.report-narrative .story-section-heading { display: block; }
+.report-narrative .story-section-number {
+  display: block;
+  margin: 0 0 8px;
+  color: var(--case-muted);
+  font: 500 14px/20px var(--body-font);
+  letter-spacing: 0;
+}
+.report-step + .report-step { margin-top: 64px; }
+.report-narrative .report-step h3 { max-width: none; margin: 0; }
+.reports-case main.report-narrative .story-section-copy {
+  max-width: none;
+  display: grid;
+  grid-template-columns: var(--case-tracks);
+  column-gap: var(--review-gap);
+}
+.report-narrative .story-section-copy > * {
+  grid-column: 1 / span 6;
+  min-width: 0;
+}
+.report-narrative .story-section-copy > .story-list {
+  grid-column: 1/-1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px var(--review-gap);
+  max-width: none;
+  margin: 0 0 24px;
+}
+.report-premise { margin-bottom: 16px; color: var(--case-muted); }
+
+.report-plates {
+  grid-template-columns: minmax(0, 1.599877fr) minmax(0, 1.709516fr);
+  margin-top: 32px;
+  row-gap: var(--review-gap);
+}
+.report-plates > * { min-width: 0; }
+.report-plates > :only-child { grid-column: 1/-1; }
+.report-narrative .report-plates .source-figure { margin: 0; }
+.report-plates .case-image-link { display: block; cursor: zoom-in; }
+.report-stack { display: grid; gap: var(--review-gap); min-width: 0; }
+.report-comparison-art {
+  --before-slope: calc(761 / 1280 + 409 / 1248);
+  --after-slope: calc(312.426 / 439.297);
+  --chart-gap: var(--space-caption);
+  /* Match the two stacked chart previews, including their gap, to the report. */
+  --before-width: calc(((100% - var(--review-gap)) * var(--after-slope) - var(--chart-gap)) / (var(--before-slope) + var(--after-slope)));
+  display: grid;
+  grid-template-columns: minmax(0, var(--before-width)) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--review-gap);
+}
+.report-comparison-before { display: grid; gap: var(--chart-gap); }
+.case-page main.case-review .report-comparison-before .case-media-crop {
+  width: 100%;
+  height: 100%;
+}
+.report-development-art {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--review-gap);
+}
+@media (min-width: 761px) {
+  .report-development-art {
+    --monitor-ratio: calc(2604 / 1459);
+    --row-ratio: calc(var(--monitor-ratio) + 1160 / 730);
+    --first-share: calc(var(--monitor-ratio) / var(--row-ratio));
+    grid-template-columns: minmax(0, 1.785fr) minmax(0, 1.589fr);
+  }
+}
+.report-comparison-art .case-image-link, .report-development-art .case-image-link { display: block; }
+@media (max-width: 760px) {
+  .report-comparison-art { grid-template-columns: minmax(0, 1fr); }
+}
+.report-narrative .result-summary h3 { margin: 0 0 12px; }
+.report-narrative .result-summary .result-lead { margin: 0; }
+.case-page main.report-narrative .result-evidence > .result-context {
+  margin-block-start: 12px;
+}
+.report-narrative .result-metrics > div:only-child {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "value" "label";
+}
+.report-narrative .result-metrics .result-value { margin-bottom: 8px; }
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .report-issues > div { grid-column: span 4; }
+  .report-narrative .story-section-copy > * { grid-column: 1/-1; }
+}
+@media (max-width: 760px) {
+  .report-narrative .report-brief,
+  .report-narrative .story-section-row,
+  .report-issues,
+  .report-plates,
+  .reports-case main.report-narrative .story-section-copy {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .report-brief > div,
+  .report-issues > div,
+  .report-plates > *,
+  .report-narrative .story-section-copy > * { grid-column: 1/-1; }
+  .report-brief p, .report-issues p { font-size: 16px; line-height: 24px; }
+  .report-chapter-heading { margin-bottom: 24px; }
+  .report-step + .report-step { margin-top: 48px; }
+  .report-narrative .story-section-row { row-gap: 12px; }
+  .report-narrative .story-section-copy > .story-list { grid-template-columns: minmax(0, 1fr); }
+  .report-plates { margin-top: 24px; }
+}

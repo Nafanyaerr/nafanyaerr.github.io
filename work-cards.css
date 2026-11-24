@@ -1,0 +1,17 @@
+/* Scale the finished crop rather than its source image: each dashboard keeps
+   its original framing, and the neighbouring copy and stitch grid stay put. */
+.project .project-visual{border:0;box-shadow:none;overflow:visible}
+.project .project-image{--cover-zoom:1.05;isolation:isolate;transform-origin:center;transition:transform 230ms cubic-bezier(.2,.7,.2,1)}
+.project .project-image::after{content:"";position:absolute;inset:0;z-index:1;border:1px solid #000;pointer-events:none;opacity:1;transition:opacity 180ms ease}
+@media(hover:hover) and (pointer:fine){
+  .project:hover .project-image{transform:scale(var(--cover-zoom))}
+  .project:hover .project-image::after{opacity:0}
+}
+.project:focus-visible .project-image{transform:scale(var(--cover-zoom))}
+.project:focus-visible .project-image::after{opacity:0}
+.project[href]:focus-visible{outline:2px solid var(--focus);outline-offset:4px}
+.project[href]:focus-visible .project-visual{outline:none}
+@media(prefers-reduced-motion:reduce){
+  .project .project-image,.project .project-image::after{--cover-zoom:1;transition:none}
+  .project:is(:hover,:focus-visible) .project-image{transform:none}
+}

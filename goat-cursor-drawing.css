@@ -1,0 +1,36 @@
+@import url('stitch-scale.css');
+
+/* Keep the brush above the page background, below every content layer. */
+body:is(.home-frame501, .about-page, .contact-page, .history-page) { isolation: isolate; }
+
+.goat-cursor-drawing {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  contain: paint;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+.goat-cursor-drawing svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.goat-cursor-drawing use {
+  opacity: 1;
+  transition: none;
+}
+
+.goat-cursor-drawing use[data-state="hidden"] {
+  opacity: 0;
+  transition: none;
+}
+
+.case-image-open .goat-cursor-drawing {
+  visibility: hidden;
+}
+

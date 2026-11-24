@@ -1,0 +1,40 @@
+/* Figma 520:4235: Regular → Semibold on hover/focus → Medium when pressed.
+   Reserve the widest label so weight changes do not move nearby controls. */
+.secondary-action.secondary-action{
+  position:relative;display:inline-grid;grid-template-areas:"label";
+  align-items:center;min-width:0;min-height:44px;padding:7px 16px 9px;
+  border:0;border-radius:0;background:transparent;color:inherit;
+  font:400 16px/20px var(--body-font,Inter,sans-serif);
+  text-decoration:none;cursor:pointer;
+}
+.secondary-action>.secondary-label,
+.secondary-action::after{grid-area:label;min-width:0;text-align:inherit}
+.secondary-action::after{
+  content:attr(data-secondary-label);font-weight:600;visibility:hidden;pointer-events:none;
+}
+.secondary-action.secondary-action:is(:hover,:focus-visible){font-weight:600;text-decoration:none;color:inherit;background:transparent}
+.secondary-action.secondary-action:active{font-weight:500}
+.secondary-action:focus-visible{outline:2px solid var(--focus,#6b7d7d);outline-offset:2px}
+.case-lightbox-close.secondary-action{min-height:48px;padding:12px 16px}
+.case-lightbox-close.secondary-action>.secondary-label{display:inline-flex;gap:12px;align-items:center}
+.case-lightbox-close.secondary-action::after{padding-right:36px}
+.case-lightbox-close.secondary-action:is(:hover,:focus-visible,:active){color:inherit}
+.case-lightbox-close.secondary-action:focus-visible{outline-color:currentColor}
+@media(max-width:600px){.case-lightbox-close.secondary-action{min-height:44px;padding:10px 12px}}
+
+/* Native 4.33377px menu stitches, arranged into functional icons. */
+.ui-stitch-icon{display:block;flex:none;color:var(--ink,#25272a);pointer-events:none;overflow:visible}
+.case-review-back.secondary-action>.secondary-label{display:inline-flex;align-items:center;gap:8px}
+.case-review-back.secondary-action::after{padding-inline-start:28px}
+.review-nav-arrow{display:flex;align-items:center;justify-content:center}
+.case-lightbox-close .ui-stitch-icon{color:inherit}
+.ui-stitch-icon path{transition:fill 120ms steps(2,end)}
+:is(a,button):is(:hover,:focus-visible,:active) .ui-stitch-icon path{
+  fill:var(--stitch-color);
+  animation:ui-stitch-glitch 112ms steps(1,end) calc(var(--stitch-order)*8ms) both;
+}
+.review-project-nav .review-nav-card .review-nav-arrow path{transition:none;animation:none}
+@media(prefers-reduced-motion:reduce){
+  .ui-stitch-icon path{transition:none}
+  :is(a,button):is(:hover,:focus-visible,:active) .ui-stitch-icon path{animation:none}
+}
