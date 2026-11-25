@@ -1,7 +1,7 @@
 /* Shared type scale. Rem units respect the reader's preferred font size. */
 :root {
   --ink:#25272a;
-  --caption-color:#6b7d7d;
+  --caption-color:#596c6c;
   --body-font:Inter,Arial,sans-serif;
   --display-font:Tektur,monospace;
   --type-14:.875rem;
@@ -17,9 +17,9 @@
   --type-card:var(--type-24);
   --type-section:var(--type-28);
   --type-section-leading:1.285714;
-  --type-feature:var(--type-48);
+  --type-feature:clamp(1.5rem, calc(.75rem + 4.5vw), var(--type-48));
   --type-feature-leading:1.166667;
-  --type-display:var(--type-48);
+  --type-display:clamp(2rem, calc(1.5rem + 2vw), var(--type-48));
   --type-display-leading:1.166667;
   --type-metric:var(--type-48);
 }
@@ -44,8 +44,8 @@ body .site-footer :is(.footer-link,.copyright),
   --caption-color:#596c6c;
 }
 .case-review {
-  --type-body:var(--type-18);
-  --type-body-leading:var(--type-28);
+  --type-body:clamp(var(--type-18), calc(.875rem + .4vw), var(--type-20));
+  --type-body-leading:1.6;
 }
 .review-nav-caption { letter-spacing:.04em; }
 .review-nav-title,.review-nav-arrow { font-size:var(--type-20); line-height:1.4; }
@@ -64,22 +64,21 @@ body:not(.case-page) main h2,
 }
 body .project .project-copy h3,
 .home-frame501 .figma-work .project .project-copy h3 {
+  color:#000;
   font-size:var(--type-card);
   line-height:1.333333;
+  text-wrap:balance;
 }
-body .project .project-copy p {
-  font-size:var(--type-14);
-  line-height:1.25rem;
-  color:var(--caption-color);
-}
-.home-frame501 .figma-work .project .project-copy {
+.project .project-copy {
   container-type:inline-size;
 }
+body .project .project-copy p,
 .home-frame501 .figma-work .project .project-copy p {
   font-size:var(--type-18);
   font-size:clamp(var(--type-16),calc(.75rem + 1.25cqi),var(--type-18));
-  line-height:var(--type-28);
-  line-height:clamp(var(--type-24),calc(1rem + 2.5cqi),var(--type-28));
+  line-height:1.55;
+  max-inline-size:none;
+  text-wrap:pretty;
   color:#000;
 }
 .about-copy { font-size:var(--type-body); font-weight:400; line-height:var(--type-body-leading); max-width:60ch; }
@@ -94,6 +93,7 @@ main.case-story.case-review h2 {
   font-size:var(--type-section);
   line-height:var(--type-section-leading);
 }
+.case-page main.case-review :is(h1,h2,h3) { text-wrap:balance; }
 .case-page main.case-story.case-review h3 {
   color:#000;
   font-size:var(--type-20);

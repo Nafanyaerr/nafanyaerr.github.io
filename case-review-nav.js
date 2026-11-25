@@ -6,15 +6,88 @@ if (sectionNav) {
   const header = sectionNav.closest('header');
   const inner = sectionNav.parentElement;
   const back = inner.querySelector('.case-review-back');
+  const backLabel = back.querySelector('.secondary-label');
+  const shortBackLabel = document.createElement('span');
+  shortBackLabel.className = 'case-back-short';
+  shortBackLabel.textContent = 'Work';
+  shortBackLabel.setAttribute('aria-hidden', 'true');
+  back.setAttribute('aria-label', backLabel.textContent.trim());
+  backLabel.append(shortBackLabel);
+
+  const compact = window.matchMedia('(max-width: 760px)');
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'case-section-toggle';
+  sectionNav.id = sectionNav.id || 'case-section-links';
+  toggle.setAttribute('aria-controls', sectionNav.id);
+  toggle.setAttribute('aria-expanded', 'false');
+  sectionNav.before(toggle);
+  let currentLink = sectionNav.querySelector('a[aria-current="location"]');
+
+  function closeMenu(restoreFocus = false) {
+    if (toggle.getAttribute('aria-expanded') !== 'true') return;
+    toggle.setAttribute('aria-expanded', 'false');
+    if (restoreFocus) toggle.focus({preventScroll: true});
+  }
+
+  toggle.addEventListener('click', () => {
+    const opening = toggle.getAttribute('aria-expanded') === 'false';
+    toggle.setAttribute('aria-expanded', String(opening));
+  });
+  toggle.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+    event.preventDefault();
+    toggle.setAttribute('aria-expanded', 'true');
+    (currentLink || links[0])?.focus();
+  });
+  header.addEventListener('keydown', event => {
+    if (!compact.matches || toggle.getAttribute('aria-expanded') !== 'true') return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeMenu(true);
+    }
+  });
+  document.addEventListener('pointerdown', event => {
+    if (!header.contains(event.target)) closeMenu();
+  });
+  header.addEventListener('focusout', event => {
+    if (!header.contains(event.relatedTarget)) closeMenu();
+  });
+
+  sectionNav.addEventListener('click', event => {
+    const link = event.target.closest('a');
+    if (!compact.matches || !link || event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
+    closeMenu();
+    // Keep native anchor navigation and history, then transfer keyboard focus to the chapter.
+    const section = document.getElementById(link.hash.slice(1));
+    const heading = section?.matches('h1,h2,h3') ? section : section?.querySelector('h1,h2,h3');
+    if (heading) {
+      heading.setAttribute('tabindex', '-1');
+      requestAnimationFrame(() => heading.focus({preventScroll: true}));
+    }
+  });
+  compact.addEventListener('change', () => {
+    const focused = document.activeElement;
+    closeMenu();
+    if (compact.matches && sectionNav.contains(focused)) toggle.focus({preventScroll: true});
+    if (!compact.matches && focused === toggle) currentLink?.focus({preventScroll: true});
+    measure();
+    schedule();
+  });
+
   const measure = () => {
-    const shell = inner.getBoundingClientRect();
-    const backWidth = back.getBoundingClientRect().width;
-    const menuGap = parseFloat(getComputedStyle(sectionNav).columnGap) || 0;
-    const menuWidth = links.reduce((width, link) => width + link.getBoundingClientRect().width, 0)
-      + menuGap * (links.length - 1);
-    const clearance = parseFloat(getComputedStyle(inner).getPropertyValue('--case-nav-gap'));
-    // Reserve equal space on both sides so the section menu stays centered.
-    inner.classList.toggle('is-inline', 2 * (backWidth + clearance) + menuWidth <= shell.width);
+    if (compact.matches) {
+      inner.classList.remove('is-inline');
+    } else {
+      const shell = inner.getBoundingClientRect();
+      const backWidth = back.getBoundingClientRect().width;
+      const menuGap = parseFloat(getComputedStyle(sectionNav).columnGap) || 0;
+      const menuWidth = links.reduce((width, link) => width + link.getBoundingClientRect().width, 0)
+        + menuGap * (links.length - 1);
+      const clearance = parseFloat(getComputedStyle(inner).getPropertyValue('--case-nav-gap'));
+      // Reserve equal space on both sides so the section menu stays centered.
+      inner.classList.toggle('is-inline', 2 * (backWidth + clearance) + menuWidth <= shell.width);
+    }
     const height = header.getBoundingClientRect().height;
     document.documentElement.style.setProperty('--case-sticky-offset', `${Math.ceil(height / 4) * 4 + 16}px`);
   };
@@ -43,14 +116,19 @@ if (sectionNav) {
     // A short closing chapter may not reach the sticky header before the
     // document reaches its bottom scroll limit.
     if (window.scrollY > 0 && document.documentElement.scrollHeight - window.innerHeight - window.scrollY < 3) active = items[items.length - 1];
-    for (const {link} of items) {
-      if (link === active?.link) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
+    if (active && (active.link !== currentLink || !toggle.textContent)) {
+      currentLink?.removeAttribute('aria-current');
+      currentLink = active.link;
+      currentLink.setAttribute('aria-current', 'location');
+      const name = currentLink.textContent.trim();
+      toggle.textContent = name;
+      toggle.setAttribute('aria-label', 'Case sections: ' + name);
     }
   };
   const schedule = () => {if (!queued) {queued = true; requestAnimationFrame(update)}};
   window.addEventListener('scroll', schedule, {passive:true});
   window.addEventListener('resize', schedule, {passive:true});
   window.addEventListener('pageshow', schedule);
+  window.addEventListener('hashchange', schedule);
   update();
 }

@@ -26,7 +26,8 @@ body.about-page .site-header { min-height: 72px; padding: 16px 0; }
 .about-page p.about-story {
   margin: 0;
   font-size: var(--type-16);
-  line-height: 1.2;
+  line-height: 1.5;
+  text-wrap: pretty;
 }
 
 .about-collage {
@@ -170,8 +171,6 @@ body.about-page .site-header { min-height: 72px; padding: 16px 0; }
   body.about-page { --about-width: round(down, calc(100% - 64px), 16px); --about-gap: 24px; }
   .about-page main { padding-top: 64px; }
   .about-page .site-footer { margin-top: 100px; }
-  .about-page .about-story p,
-  .about-page p.about-story { line-height: 1.5; }
   .about-collage--making {
     --ornament-overhang: 0px;
     width: min(100%, 444px);

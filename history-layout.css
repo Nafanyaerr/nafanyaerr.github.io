@@ -83,7 +83,7 @@ body.history-page .site-header {
   .history-page .site-footer { margin-top:80px; }
   .history-page .site-footer .back-top { margin-left:0; }
   .history-page .history-table tr {
-    grid-template-columns:80px minmax(0,36%) minmax(0,1fr);
+    grid-template-columns:5rem minmax(0,36%) minmax(0,1fr);
   }
   .history-page .history-table th { padding-inline:16px; font-size:var(--type-16); }
   .history-page .history-table td { min-height:112px; padding:24px 16px; }
@@ -96,11 +96,18 @@ body.history-page .site-header {
 @media(max-width:650px) {
   .history-page {
     --history-width:calc(100% - 40px);
-    --history-row-size:var(--type-body);
-    --history-row-leading:var(--type-body-leading);
   }
   body.history-page .site-header { height:68px; }
   .history-page .history-content { margin-top:40px; }
+  .history-page .site-footer { margin-top:56px; }
+}
+/* Stack the year, project and description when there is too little room for
+   three columns at the reader's chosen text size. */
+@container (max-width:38rem) {
+  .history-page .history-table {
+    --history-row-size:var(--type-body);
+    --history-row-leading:var(--type-body-leading);
+  }
   .history-page .history-table thead { display:none; }
   .history-page .history-table tbody { gap:12px; }
   .history-page .history-table tr {
@@ -122,5 +129,4 @@ body.history-page .site-header {
     font-weight:500;
     line-height:1.4;
   }
-  .history-page .site-footer { margin-top:56px; }
 }

@@ -140,7 +140,41 @@
 }
 
 .crm-case .result-summary {
-  container-type: inline-size;
+  container: crm-results / inline-size;
+}
+
+.case-review .result-metrics {
+  row-gap: var(--space-panel);
+}
+
+.case-review .result-metrics > div {
+  align-items: start;
+  row-gap: var(--space-detail);
+}
+
+.case-page main.case-review .result-metrics :is(.result-value, .result-context) {
+  margin: 0;
+}
+
+.case-page main.case-review .result-evidence > .result-context {
+  margin-block-start: var(--space-detail);
+}
+
+@container crm-results (width < 34rem) {
+  .result-metrics { grid-template-columns: minmax(0, 1fr); }
+
+  .result-metrics > div {
+    grid-template-columns: max(6.25rem, calc(2.5 * var(--type-metric))) minmax(0, 1fr);
+    grid-template-areas: "value label" "value context";
+    column-gap: 20px;
+  }
+}
+
+@container crm-results (width < 17rem) {
+  .result-metrics > div {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "value" "label" "context";
+  }
 }
 
 .case-review .case-workflow {
@@ -333,15 +367,17 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .case-split {
-    --copy-start: 3;
+@media (min-width: 75rem) {
+  .case-page main.case-split :is(.review-opening-copy, .report-opening) {
+    align-items: baseline;
   }
 
-  .case-page main.case-split :is(.story-section-copy, .review-overview-copy):not(.overview-columns)
-    p:not(.story-label, .source-note),
-  .case-page main.case-split .result-summary :is(p.result-lead, p.result-context, .result-note) {
-    line-height: var(--type-32);
+  .case-page main.case-split :is(.review-opening-copy, .report-opening) > h1 {
+    grid-column: 1 / 5;
+  }
+
+  .case-page main.case-split :is(.review-opening-copy, .report-opening) > .story-lead {
+    grid-column: 5 / -1;
   }
 }
 

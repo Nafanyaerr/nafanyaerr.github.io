@@ -241,3 +241,163 @@ main.case-story.case-review h2{font:400 var(--chapter-size)/var(--chapter-leadin
 .case-review-back{margin-left:-16px}
 .case-review-links a[aria-current="location"]{font-weight:600;color:var(--ink)}
 .case-review-header a:is(:hover,:focus-visible,:active){color:var(--ink);text-decoration:none}
+
+/* Compact case navigation uses the same chapter links as the desktop menu. */
+.case-section-toggle, .case-back-short { display: none; }
+
+@media (max-width: 760px) {
+  .case-review-header-inner:has(.case-section-toggle) {
+    position: relative;
+    display: flex;
+    container: case-header / inline-size;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    min-height: 52px;
+    padding-block: 4px;
+  }
+
+  .case-review-header .case-review-back.secondary-action {
+    flex: 0 1 auto;
+    max-width: 54%;
+    margin: 0;
+    padding-inline: 0;
+    min-height: 44px;
+    text-align: start;
+  }
+
+  .case-review-header .case-section-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 1 1 0;
+    min-width: min-content;
+    max-width: 100%;
+    min-height: 44px;
+    margin-inline-start: auto;
+    padding: 6px 0 6px 8px;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-weight: 600;
+    line-height: 1.25;
+    overflow-wrap: normal;
+    text-align: end;
+    cursor: pointer;
+  }
+
+  .case-section-toggle::after {
+    content: '';
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    margin-inline: 2px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+  }
+
+  .case-section-toggle[aria-expanded="true"]::after {
+    transform: translateY(2px) rotate(225deg);
+  }
+
+  .case-section-toggle:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  .case-section-toggle + .case-review-links { display: none; }
+  .case-section-toggle[aria-expanded="true"] + .case-review-links {
+    position: absolute;
+    inset: 100% 0 auto auto;
+    display: grid;
+    width: min(100%, 18rem);
+    max-height: calc(100dvh - var(--case-sticky-offset, 68px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    justify-content: stretch;
+    padding: 4px;
+    border: 1px solid #c4c4c4;
+    background: var(--page, #faf9f5);
+  }
+
+  .case-review-header .case-section-toggle + .case-review-links a {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-height: 44px;
+    padding: 8px 12px;
+    color: var(--ink);
+  }
+
+  .case-section-toggle + .case-review-links a[aria-current="location"] {
+    background: color-mix(in srgb, var(--case-accent) 9%, var(--page, #faf9f5));
+  }
+
+  .case-section-toggle + .case-review-links a[aria-current="location"]::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    margin-inline: 4px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-1px) rotate(45deg);
+  }
+
+  .case-section-toggle + .case-review-links a:focus-visible { outline-offset: -2px; }
+  .case-section-toggle + .case-review-links .nav-decoration { display: none; }
+
+  .case-review .review-project-nav {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .case-review .review-project-nav .review-nav-card {
+    position: relative;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "caption" "title";
+    justify-content: stretch;
+    align-content: center;
+    min-height: 76px;
+    padding: 12px calc(var(--nav-arrow-width) + var(--nav-arrow-gap)) 12px 0;
+    text-align: start;
+  }
+
+  .case-review .review-project-nav .review-nav-card + .review-nav-card {
+    border-top: 1px solid #c4c4c4;
+  }
+
+  .review-project-nav .review-nav-caption { padding: 0; }
+  .review-project-nav .review-nav-ending { display: inline; white-space: normal; }
+  .review-project-nav .review-nav-arrow {
+    position: absolute;
+    inset: 50% 0 auto auto;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .case-section-toggle[aria-expanded="true"] + .case-review-links { width: 100%; }
+}
+
+/* Keep whole chapter names at large reading sizes. The compact back label is
+   based on the header's space in rem, so default-size phones keep "Back to work". */
+@container case-header (max-width: 16rem) {
+  .case-review-header .case-section-toggle { padding-inline-start: 0; }
+  .case-review-back .secondary-label > span:not(.case-back-short) { display: none; }
+  .case-review-back .case-back-short { display: inline; }
+  .case-review-back.secondary-action::after { content: none; }
+  .case-review-header .case-review-back.secondary-action { min-width: 44px; }
+}
+
+@container case-header (max-width: 10rem) {
+  .case-review-back .case-back-short { display: none; }
+  .case-review-header .case-review-back.secondary-action {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+  }
+}
