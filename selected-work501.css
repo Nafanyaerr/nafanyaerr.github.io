@@ -29,7 +29,7 @@
 .figma-work .phone-window{display:block;position:relative;width:31.287171%;aspect-ratio:164.883392/346.335846}
 .figma-work .project .phone-window .project-image{left:4.063004%;top:2.085450%;width:91.87445%;height:95.572553%;aspect-ratio:151.48570/331;background:transparent}
 .figma-work .project .phone-window .project-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
-@media(hover:hover) and (pointer:fine){.figma-work .project:hover .cover-frame{opacity:0}}
+@media(hover:hover) and (pointer:fine){.figma-work .project:hover:where([data-hover-input] *) .cover-frame{opacity:0}}
 .figma-work .project:focus-visible .cover-frame{opacity:0}
 @media(min-width:701px) and (max-width:1000px){
   .figma-work .project .project-copy{padding-inline:4px}

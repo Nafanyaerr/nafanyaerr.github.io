@@ -22,10 +22,10 @@
 .project-pattern [data-cross]{opacity:0}
 .project.pattern-revealing .project-pattern [data-cross].is-visible{opacity:1}
 .project:focus-visible{z-index:2;outline:none}
-.project[href]:hover{text-decoration:none}
+.project[href]:hover:where([data-hover-input] *){text-decoration:none}
 .project[href]:focus-visible .project-visual{outline:2px solid var(--focus);outline-offset:8px}
 @media(hover:hover) and (pointer:fine){
-  .project:hover{z-index:3}
+  .project:hover:where([data-hover-input] *){z-index:3}
 }
 @media(prefers-reduced-motion:reduce){
   .project.pattern-revealing .project-pattern [data-cross]{opacity:1}

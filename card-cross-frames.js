@@ -49,7 +49,8 @@ function update(){
     }
   }
 }
-const observer=new ResizeObserver(update);
+// Snapping a cover to its grid can change the height of its observed card.
+const observer=new ResizeObserver(()=>requestAnimationFrame(update));
 cards.forEach(card=>observer.observe(card));
 if(hero)observer.observe(hero);
 if(cards.length){

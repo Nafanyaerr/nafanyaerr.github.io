@@ -1,5 +1,5 @@
 /* History previews are decorative: the table and its links stay interactive. */
-.history-table .history-project-link:hover { text-decoration:none; }
+.history-table .history-project-link:hover:where([data-hover-input] *) { text-decoration:none; }
 .history-preview {
   position:fixed;
   left:0;

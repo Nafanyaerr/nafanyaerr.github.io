@@ -51,7 +51,9 @@ if (sectionNav) {
     if (!header.contains(event.target)) closeMenu();
   });
   header.addEventListener('focusout', event => {
-    if (!header.contains(event.relatedTarget)) closeMenu();
+    // A touch on a link can blur the toggle with no next focus target in Safari.
+    // Outside taps are handled on pointerdown and inside links close on click.
+    if (event.relatedTarget && !header.contains(event.relatedTarget)) closeMenu();
   });
 
   sectionNav.addEventListener('click', event => {
@@ -92,7 +94,7 @@ if (sectionNav) {
     document.documentElement.style.setProperty('--case-sticky-offset', `${Math.ceil(height / 4) * 4 + 16}px`);
   };
   if ('ResizeObserver' in window) {
-    const observer = new ResizeObserver(measure);
+    const observer = new ResizeObserver(() => requestAnimationFrame(measure));
     for (const element of [header, inner, back, ...links]) observer.observe(element);
   } else {
     window.addEventListener('resize', measure);

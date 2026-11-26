@@ -1,7 +1,8 @@
 /* Use the same 51-column stage at the homepage breakpoints. */
 :root {
   --goat-stage-max: 420.75px;
-  --goat-reference-width: min(1408px, round(down, 80vw, 16px));
+  --goat-available-width: 80vw;
+  --goat-reference-width: min(1408px, var(--goat-available-width));
   --goat-track-share: .5;
   --goat-track-gap: 32px;
   --goat-stitch: calc(min(var(--goat-stage-max), (var(--goat-reference-width) - var(--goat-track-gap)) * var(--goat-track-share)) / 51);
@@ -9,7 +10,7 @@
 
 @media (min-width: 701px) and (max-width: 1000px) {
   :root {
-    --goat-reference-width: round(down, 100vw - 64px, 16px);
+    --goat-available-width: calc(100vw - 64px);
     --goat-track-share: calc(1 / 2.4);
     --goat-track-gap: 24px;
   }
@@ -17,8 +18,13 @@
 
 @media (max-width: 700px) {
   :root {
-    --goat-reference-width: round(down, 100vw - 40px, 16px);
+    --goat-available-width: calc(100vw - 40px);
     --goat-track-share: 1;
     --goat-track-gap: 0px;
   }
+}
+
+/* Older browsers still get a valid stitch size when the grid cannot be snapped. */
+@supports (width: round(down, 100px, 16px)) {
+  :root { --goat-reference-width: min(1408px, round(down, var(--goat-available-width), 16px)); }
 }

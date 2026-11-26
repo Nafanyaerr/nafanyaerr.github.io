@@ -21,11 +21,11 @@ html:has(.site-header) {
 .site-header nav a[data-menu="contact"]{width:94px}
 .site-header nav a:last-child{margin-left:0;padding-right:16px}
 .site-header nav a[aria-current="page"]{color:#25272a;font-weight:600}
-.site-header nav a:hover{background-image:none;text-decoration:none}
+.site-header nav a:hover:where([data-hover-input] *){background-image:none;text-decoration:none}
 .site-header nav a:focus-visible{outline-offset:4px}
 .nav-label{position:relative;display:inline-block}
-.nav-decoration{position:absolute;inset:0;visibility:hidden;pointer-events:none}
-:is(.site-header nav,.case-review-header) a:is(:hover,:focus-visible,:active) .nav-decoration{visibility:visible}
+.nav-decoration{position:absolute;inset:0;opacity:0;pointer-events:none}
+:is(.site-header nav,.case-review-header) a:is(:hover:where([data-hover-input] *),:focus-visible) .nav-decoration{opacity:1}
 .nav-decoration .menu-bracket{position:absolute;display:block;max-width:none;top:0}
 .nav-decoration .menu-bracket-left{right:calc(100% + 8px)}
 .nav-decoration .menu-bracket-right{left:calc(100% + 8px);top:.2px}

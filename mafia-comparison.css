@@ -101,8 +101,8 @@
 .compare-toggle:is(:focus-visible, :active) { --comparison-ink: initial; }
 
 @media (hover: hover) {
-  .compare-grip:hover,
-  .compare-toggle:hover { --comparison-ink: initial; }
+  .compare-grip:hover:where([data-hover-input] *),
+  .compare-toggle:hover:where([data-hover-input] *) { --comparison-ink: initial; }
 }
 
 .compare-stage .compare-range {
@@ -156,7 +156,7 @@
   }
 }
 
-.compare-toggle:hover { background: #46454d; }
+.compare-toggle:hover:where([data-hover-input] *) { background: #46454d; }
 .compare-toggle:focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 2px #fff;

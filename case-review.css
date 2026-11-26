@@ -183,7 +183,7 @@ main.case-story.case-review h2{font:400 var(--chapter-size)/var(--chapter-leadin
 .review-nav-title{grid-area:title;min-width:0;font:500 20px/28px var(--body-font);text-wrap:pretty}
 .review-nav-arrow{grid-area:arrow;align-self:start;inline-size:var(--nav-arrow-width);min-block-size:28px;font:400 20px/28px var(--body-font)}
 .review-nav-ending{display:inline-flex;align-items:center;gap:var(--nav-arrow-gap);vertical-align:top;white-space:nowrap}
-.case-review .review-project-nav .review-nav-card:is(:hover,:focus-visible,:active){color:var(--ink);text-decoration:none}
+.case-review .review-project-nav .review-nav-card:is(:hover:where([data-hover-input] *),:focus-visible,:active){color:var(--ink);text-decoration:none}
 .review-nav-card:focus-visible{outline:2px solid currentColor}
 .case-page .site-footer{margin-top:var(--footer-gap)}
 @media(min-width:1101px){
@@ -240,7 +240,7 @@ main.case-story.case-review h2{font:400 var(--chapter-size)/var(--chapter-leadin
 .case-review-header :is(a.case-review-back,.case-review-links a){position:relative;padding-inline:16px;font-size:inherit;line-height:inherit;font-weight:400}
 .case-review-back{margin-left:-16px}
 .case-review-links a[aria-current="location"]{font-weight:600;color:var(--ink)}
-.case-review-header a:is(:hover,:focus-visible,:active){color:var(--ink);text-decoration:none}
+.case-review-header a:is(:hover:where([data-hover-input] *),:focus-visible,:active){color:var(--ink);text-decoration:none}
 
 /* Compact case navigation uses the same chapter links as the desktop menu. */
 .case-section-toggle, .case-back-short { display: none; }

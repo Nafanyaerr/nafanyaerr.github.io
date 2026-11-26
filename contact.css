@@ -1,6 +1,5 @@
 body.contact-page {
   --page: #faf9f5;
-  --contact-width: min(1408px, round(down, 80vw, 16px));
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -9,14 +8,14 @@ body.contact-page {
 }
 
 body.contact-page :is(.site-header, .site-footer, main.shell) {
-  width: var(--contact-width);
+  width: var(--goat-reference-width);
   max-width: none;
   margin-inline: auto;
 }
 
 .contact-main {
-  container-type: inline-size;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   place-items: center;
   flex: 1;
   padding-block: 48px;
@@ -38,11 +37,14 @@ body.contact-page header.site-header {
   justify-content: center;
   width: min(100%, 872px);
   min-height: 616px;
-  padding: 72px 16px;
+  /* Side ornaments occupy five stitches. Keep their space when copy wraps. */
+  padding: 72px calc(5 * var(--goat-stitch) + 12px);
 }
 
 .contact-title {
   position: relative;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   margin: 32px 0 0;
   font: 500 var(--type-28)/1.214286 var(--body-font);
   text-align: center;
@@ -54,6 +56,7 @@ body.contact-page header.site-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 100%;
   column-gap: 32px;
   margin: 64px 0 0;
   padding: 0;
@@ -64,9 +67,11 @@ body.contact-page header.site-header {
   display: block;
   font-size: var(--type-20);
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.2;
   text-decoration: none;
 }
+
+.contact-links li { max-width: 100%; overflow-wrap: anywhere; text-align: center; }
 
 .contact-links a span { position: relative; }
 
@@ -89,17 +94,17 @@ body.contact-page header.site-header {
     #d94658 0 var(--pink-end), #6a3b94 0 var(--purple-end),
     #48afc0 0 var(--cyan-end), #76a832 0);
   mask: url('assets/case-cross.svg') 0 0 / var(--underline-stitch) var(--underline-stitch) repeat-x;
-  visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 }
 
-.contact-links a:is(:hover, :focus-visible, :active) span::after {
-  visibility: visible;
+.contact-links a:is(:hover:where([data-hover-input] *), :focus-visible) span::after {
+  opacity: 1;
   animation: footer-stitch-in 180ms steps(20, end) both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .contact-links a:is(:hover, :focus-visible, :active) span::after { animation: none; }
+  .contact-links a:is(:hover:where([data-hover-input] *), :focus-visible) span::after { animation: none; }
 }
 
 /* Keep the original letter proportions and align the three assets at the baseline. */
@@ -158,25 +163,23 @@ body.contact-page header.site-header {
 .contact-page .back-top { margin: 0 8px 0 0; }
 
 @media (max-width: 1000px) {
-  body.contact-page { --contact-width: round(down, 100% - 64px, 16px); }
   .contact-panel { min-height: 544px; }
 }
 
 @media (max-width: 700px) {
-  body.contact-page { --contact-width: round(down, 100% - 40px, 16px); }
   body.contact-page header.site-header { min-height: 68px; padding-top: 0; }
   .contact-page .site-header nav { transform: none; }
   .contact-main { padding-block: 32px; }
   .contact-panel { min-height: max(392px, calc(52 * var(--goat-stitch))); }
   .contact-title { margin-top: 24px; font-size: var(--type-24); line-height: 1.333333; }
-  .contact-links { margin-top: 32px; column-gap: clamp(12px, 5cqw, 32px); }
-  .contact-links a { padding-block: 10px; font-size: var(--type-16); }
+  .contact-links { margin-top: 32px; column-gap: clamp(12px, 4vw, 32px); }
+  .contact-links a { padding-block: 10px; font-size: var(--type-16); line-height: 1.5; }
   .contact-page .copyright { width: auto; }
   .contact-page .site-footer { flex-wrap: nowrap; }
   .contact-page .back-top { margin: 0; }
 }
 
-@container (max-width: 480px) {
+@media (max-width: 600px) {
   .contact-ornament {
     grid-template-columns: 12em 4em;
     justify-content: center;

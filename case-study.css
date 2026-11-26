@@ -33,7 +33,7 @@
 .case-image-hint{white-space:nowrap}
 .case-hero-figure{margin-bottom:48px}
 .case-contents{display:flex;flex-wrap:wrap;gap:16px 32px;padding:24px 0;font-size:14px;line-height:20px}
-.case-contents a:hover{color:#6a3b94}
+.case-contents a:hover:where([data-hover-input] *){color:#6a3b94}
 .case-section{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px 64px;margin-top:120px;scroll-margin-top:32px}
 
 .case-index{display:block;color:var(--case-muted);margin-bottom:20px}
@@ -79,8 +79,8 @@
 @media(max-width:600px){.case-study{padding-top:36px}.case-back{margin-bottom:40px}.case-eyebrow{font-size:12px;margin-bottom:16px}.case-intro h1{font-size:36px;line-height:44px;letter-spacing:-1px;overflow-wrap:normal}.case-standfirst{font-size:20px;line-height:30px;margin:24px 0 32px}.case-meta{grid-template-columns:1fr;gap:24px;margin-bottom:32px}.case-meta>div:last-child{grid-column:auto}.case-hero-figure{margin-bottom:32px}.case-contents{gap:16px 24px;padding-block:20px}.case-section{margin-top:64px;gap:28px}.case-section h2{font-size:28px;line-height:36px}.case-index{margin-bottom:16px}.case-prose{font-size:16px;line-height:28px}.case-prose h3{font-size:20px;line-height:28px;margin-top:28px}.case-research-list{grid-template-columns:1fr;gap:12px}.case-insight{margin-top:24px}.case-insight p{font-size:20px;line-height:28px}.case-image-pair{grid-template-columns:1fr;gap:32px}.case-figure figcaption{font-size:14px;line-height:20px}.case-choice{display:table;margin:8px 0 0}.case-metrics{grid-template-columns:1fr;gap:28px}.case-metrics .case-metric-number{font-size:56px;line-height:68px;margin-bottom:8px}.case-metrics dt{margin-bottom:8px}.case-metrics dd{max-width:none}.case-end{margin-top:72px;gap:24px}.case-page .site-footer{margin-top:64px}}
 
 /* Quiet case-study structure: spacing, native stitches and unframed images. */
-.case-study a:is(:hover,:focus-visible){text-decoration:none}
-.case-study :is(.case-back,.case-end a):is(:hover,:focus-visible){color:#6a3b94}
+.case-study a:is(:hover:where([data-hover-input] *),:focus-visible){text-decoration:none}
+.case-study :is(.case-back,.case-end a):is(:hover:where([data-hover-input] *),:focus-visible){color:#6a3b94}
 .case-insight .case-small-label{display:flex;align-items:center;gap:12px}
 .case-insight .case-small-label::before{content:"";display:block;flex:none;width:var(--cross-size);height:var(--cross-size)}
 .case-results::before{content:"";display:block;width:calc(3 * var(--cross-size));height:var(--cross-size);margin-bottom:24px}

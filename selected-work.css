@@ -57,7 +57,7 @@
 .figma-work .phone-window img {position:absolute;display:block;top:0;left:0;width:100%;height:auto;max-width:none}
 .figma-work .phone-job img {left:50%;width:103.448276%;transform:translateX(-50%)}
 @media(hover:hover) and (pointer:fine) {
-  .figma-work .project:hover :is(.project-image,.phone-window){border-color:transparent}
+  .figma-work .project:hover:where([data-hover-input] *) :is(.project-image,.phone-window){border-color:transparent}
 }
 .figma-work .project:focus-visible :is(.project-image,.phone-window){border-color:transparent}
 @media(min-width:701px) and (max-width:1000px) {

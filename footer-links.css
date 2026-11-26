@@ -11,18 +11,18 @@
   white-space:nowrap;
   text-decoration:none;
 }
-.site-footer .footer-link:is(:hover,:focus-visible,:active) {
+.site-footer .footer-link:is(:hover:where([data-hover-input] *),:focus-visible) {
   text-decoration:none;
 }
 .site-footer .footer-link:focus-visible { outline-offset:8px; }
 .footer-link-decoration {
   position:absolute;
   inset:0;
-  visibility:hidden;
+  opacity:0;
   pointer-events:none;
 }
-.footer-link:is(:hover,:focus-visible,:active) .footer-link-decoration {
-  visibility:visible;
+.footer-link:is(:hover:where([data-hover-input] *),:focus-visible) .footer-link-decoration {
+  opacity:1;
 }
 .footer-link-decoration :is(img,svg) { position:absolute; display:block; max-width:none; }
 .footer-link-underline { left:0; top:24px; }

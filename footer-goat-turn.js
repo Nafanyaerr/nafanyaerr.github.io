@@ -38,7 +38,8 @@
       if (progress !== target) raf = requestAnimationFrame(tick);
     }
     function update() {
-      target = hovered || links.includes(document.activeElement) ? frames.length - 1 : 0;
+      const keyboardFocus = links.includes(document.activeElement) && document.activeElement.matches(':focus-visible');
+      target = hovered || keyboardFocus ? frames.length - 1 : 0;
       if (reduced.matches) {
         cancelAnimationFrame(raf); raf = 0; progress = target; paint();
       } else if (!raf && progress !== target) {
