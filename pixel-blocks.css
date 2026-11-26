@@ -1,5 +1,26 @@
 /* Each stage reveals more full squares at the same scale as the site's stitches. */
 @media (prefers-reduced-motion: no-preference) {
+  .media-pending { opacity: 0; }
+
+  /* The solid top and its dithered edge travel together. Each square in the
+     eight-column tile uses the same physical grid as the site's stitches. */
+  .pixel-down {
+    --pixel-band: calc(8 * var(--goat-stitch, 8px));
+    mask-image: linear-gradient(#000, #000), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h8v1H0zM0 1h3v1H0zM4 1h4v1H4zM0 2h1v1H0zM2 2h4v1H2zM7 2h1v1H7zM0 3h2v1H0zM3 3h1v1H3zM5 3h2v1H5zM1 4h1v1H1zM3 4h2v1H3zM7 4h1v1H7zM0 5h1v1H0zM4 5h1v1H4zM6 5h1v1H6zM2 6h1v1H2zM5 6h1v1H5zM7 7h1v1H7z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat, repeat-x;
+    animation: pixel-media-down 480ms steps(24, end) both;
+  }
+  @keyframes pixel-media-down {
+    from {
+      mask-size: 100% 0%, var(--pixel-band) var(--pixel-band);
+      mask-position: 0 0, 0 0;
+    }
+    to {
+      mask-size: 100% 100%, var(--pixel-band) var(--pixel-band);
+      mask-position: 0 0, 0 calc(100% + var(--pixel-band));
+    }
+  }
+
   .pixel-revealing {
     mask-size: calc(5 * var(--goat-stitch, 8px)) calc(5 * var(--goat-stitch, 8px));
     mask-repeat: repeat;

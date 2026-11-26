@@ -1,7 +1,8 @@
 (() => {
   const SHOW_AFTER = 1200;
   const DISMISS_AFTER = 10000;
-  if (document.readyState === 'complete') return;
+  const hasCopy = () => !!document.querySelector('main h1, main h2, main p, main th')?.textContent.trim();
+  if (document.readyState === 'complete' || hasCopy() || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const listeners = new AbortController();
   const options = {signal: listeners.signal};
@@ -10,18 +11,20 @@
   let indicator;
   let showTimer;
   let dismissTimer;
+  const content = new MutationObserver(() => { if (hasCopy()) finish(); });
 
   function finish() {
     clearTimeout(showTimer);
     clearTimeout(dismissTimer);
     listeners.abort();
+    content.disconnect();
     indicator?.remove();
     animation?.removeAttribute('src');
   }
 
   function show() {
     if (!document.body || !animation?.naturalWidth || indicator || listeners.signal.aborted) return;
-    if (document.readyState === 'complete' || document.hidden) {
+    if (document.readyState === 'complete' || document.hidden || hasCopy()) {
       finish();
       return;
     }
@@ -32,8 +35,8 @@
     const shadow = indicator.attachShadow({mode: 'open'});
     shadow.innerHTML = `
       <style>
-        :host { position: fixed; inset: 0; display: grid; place-items: center;
-          z-index: 60; background: var(--page, #faf9f5); }
+        :host { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+          pointer-events: none; }
         img { display: block; width: clamp(80px, 16vw, 144px); height: auto; }
         span { position: absolute; width: 1px; height: 1px; overflow: hidden;
           clip-path: inset(50%); white-space: nowrap; }
@@ -44,7 +47,7 @@
   }
 
   function loadAnimation() {
-    if (document.readyState === 'complete' || document.hidden) {
+    if (document.readyState === 'complete' || document.hidden || hasCopy()) {
       finish();
       return;
     }
@@ -55,24 +58,7 @@
     animation.src = animationUrl.href;
   }
 
-  function checkFirstScreen() {
-    const pending = [...document.querySelectorAll('main img')].filter(image => {
-      if (image.complete) return false;
-      const box = image.getBoundingClientRect();
-      return box.width > 0 && box.height > 0 && box.bottom > 0 && box.top < innerHeight;
-    });
-    const check = () => {
-      if (pending.every(image => image.complete)) finish();
-    };
-    for (const image of pending) {
-      image.addEventListener('load', check, options);
-      image.addEventListener('error', check, options);
-    }
-    check();
-    // The SVG may have arrived before the body was available.
-    show();
-  }
-
+  content.observe(document.documentElement, {childList: true, subtree: true, characterData: true});
   showTimer = setTimeout(loadAnimation, Math.max(0, SHOW_AFTER - performance.now()));
   dismissTimer = setTimeout(finish, DISMISS_AFTER);
   window.addEventListener('load', finish, options);
@@ -84,9 +70,5 @@
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) finish();
   }, options);
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', checkFirstScreen, {once: true, ...options});
-  } else {
-    checkFirstScreen();
-  }
+  document.addEventListener('DOMContentLoaded', finish, {once: true, ...options});
 })();

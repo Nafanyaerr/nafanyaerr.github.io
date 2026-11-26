@@ -245,16 +245,32 @@ main.case-story.case-review h2{font:400 var(--chapter-size)/var(--chapter-leadin
 /* Compact case navigation uses the same chapter links as the desktop menu. */
 .case-section-toggle, .case-back-short { display: none; }
 
-@media (max-width: 760px) {
-  .case-review-header-inner:has(.case-section-toggle) {
+@media (max-width:760px), (max-width:1000px) and (max-height:600px) and (pointer:coarse) {
+  .case-page { --case-anchor-space:calc(var(--compact-header-height) + 16px); }
+  .case-review-header .case-review-header-inner {
     position: relative;
     display: flex;
     container: case-header / inline-size;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 8px;
-    min-height: 52px;
-    padding-block: 4px;
+    height: var(--compact-header-height);
+    min-height: var(--compact-header-height);
+    padding-block: 0;
+  }
+
+  /* The plain HTML links stay usable in the same row while the chapter
+     picker loads, including when the reader browses without JavaScript. */
+  .case-review-back + .case-review-links {
+    flex: 1 1 0;
+    min-width: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+  .case-review-header .case-review-back + .case-review-links a {
+    white-space: nowrap;
+    min-height: 44px;
   }
 
   .case-review-header .case-review-back.secondary-action {
@@ -272,7 +288,7 @@ main.case-story.case-review h2{font:400 var(--chapter-size)/var(--chapter-leadin
     justify-content: flex-end;
     gap: 8px;
     flex: 1 1 0;
-    min-width: min-content;
+    min-width: 0;
     max-width: 100%;
     min-height: 44px;
     margin-inline-start: auto;
@@ -349,7 +365,9 @@ main.case-story.case-review h2{font:400 var(--chapter-size)/var(--chapter-leadin
 
   .case-section-toggle + .case-review-links a:focus-visible { outline-offset: -2px; }
   .case-section-toggle + .case-review-links .nav-decoration { display: none; }
+}
 
+@media (max-width: 760px) {
   .case-review .review-project-nav {
     grid-template-columns: minmax(0, 1fr);
     gap: 0;

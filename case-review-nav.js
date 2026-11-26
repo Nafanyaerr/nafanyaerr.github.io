@@ -6,15 +6,7 @@ if (sectionNav) {
   const header = sectionNav.closest('header');
   const inner = sectionNav.parentElement;
   const back = inner.querySelector('.case-review-back');
-  const backLabel = back.querySelector('.secondary-label');
-  const shortBackLabel = document.createElement('span');
-  shortBackLabel.className = 'case-back-short';
-  shortBackLabel.textContent = 'Work';
-  shortBackLabel.setAttribute('aria-hidden', 'true');
-  back.setAttribute('aria-label', backLabel.textContent.trim());
-  backLabel.append(shortBackLabel);
-
-  const compact = window.matchMedia('(max-width: 760px)');
+  const compact = window.matchMedia('(max-width:760px), (max-width:1000px) and (max-height:600px) and (pointer:coarse)');
   const toggle = document.createElement('button');
   toggle.type = 'button';
   toggle.className = 'case-section-toggle';
